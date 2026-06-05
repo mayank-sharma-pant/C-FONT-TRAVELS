@@ -56,7 +56,7 @@ export function FeaturedDestinations() {
                 </div>
                 <div className="mt-5 translate-y-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                   <Button asChild variant="accent" size="sm">
-                    <Link href={`/destinations/${destination.slug}`}>
+                    <Link href={`/inquiry?destination=${destination.slug}`}>
                       Explore
                       <ArrowRight className="h-4 w-4" />
                     </Link>
