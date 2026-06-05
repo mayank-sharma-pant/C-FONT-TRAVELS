@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import {
   Headphones,
   ShieldCheck,
@@ -15,7 +12,7 @@ const icons = [Users, Tag, Sparkles, Headphones, ShieldCheck];
 
 export function WhyChooseUs() {
   return (
-    <section className="relative overflow-hidden section-padding">
+    <section className="section-padding relative overflow-hidden">
       <div className="absolute inset-0 bg-navy" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(201,169,98,0.12)_0%,_transparent_60%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(26,122,140,0.15)_0%,_transparent_50%)]" />
@@ -32,12 +29,8 @@ export function WhyChooseUs() {
           {whyChooseUs.map((item, i) => {
             const Icon = icons[i];
             return (
-              <motion.div
+              <div
                 key={item.title}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ delay: i * 0.08, duration: 0.5 }}
                 className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-500 hover:border-gold/30 hover:bg-white/10"
               >
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gold/15 transition-colors group-hover:bg-gold/25">
@@ -49,7 +42,7 @@ export function WhyChooseUs() {
                 <p className="mt-2 text-sm leading-relaxed text-white/60">
                   {item.description}
                 </p>
-              </motion.div>
+              </div>
             );
           })}
         </div>

@@ -1,8 +1,5 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { ArrowRight, Clock } from "lucide-react";
 import { featuredDestinations } from "@/lib/data/destinations";
 import { SectionHeader } from "@/components/shared/section-header";
@@ -20,13 +17,9 @@ export function FeaturedDestinations() {
         />
 
         <div className="grid gap-6 md:grid-cols-2">
-          {featuredDestinations.map((destination, i) => (
-            <motion.article
+          {featuredDestinations.map((destination) => (
+            <article
               key={destination.slug}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: i * 0.1, duration: 0.6 }}
               className="group relative overflow-hidden rounded-3xl"
             >
               <div className="relative aspect-[16/10] sm:aspect-[16/9]">
@@ -34,6 +27,7 @@ export function FeaturedDestinations() {
                   src={destination.image}
                   alt={destination.name}
                   fill
+                  loading="lazy"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
@@ -63,23 +57,18 @@ export function FeaturedDestinations() {
                   </Button>
                 </div>
               </div>
-            </motion.article>
+            </article>
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="mt-12 text-center"
-        >
+        <div className="mt-12 text-center">
           <Button asChild variant="outline" size="lg">
             <Link href="/destinations">
               View All Destinations
               <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

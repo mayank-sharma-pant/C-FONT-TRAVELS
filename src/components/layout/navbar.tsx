@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
 import { navLinks, siteConfig } from "@/lib/data/site";
 import { Button } from "@/components/ui/button";
@@ -32,7 +31,7 @@ export function Navbar() {
         className={cn(
           "fixed inset-x-0 top-0 z-50 transition-all duration-500",
           isScrolled
-            ? "bg-white/90 backdrop-blur-xl shadow-sm border-b border-border/50 py-3"
+            ? "border-b border-border/50 bg-white/90 py-3 shadow-sm backdrop-blur-xl"
             : "bg-transparent py-5"
         )}
       >
@@ -43,7 +42,7 @@ export function Navbar() {
                 "flex h-10 w-10 items-center justify-center rounded-xl font-display text-lg font-bold transition-colors",
                 isScrolled
                   ? "bg-primary text-white"
-                  : "bg-white/15 text-white backdrop-blur-sm border border-white/20"
+                  : "border border-white/20 bg-white/15 text-white backdrop-blur-sm"
               )}
             >
               CF
@@ -108,11 +107,7 @@ export function Navbar() {
                 <span className="hidden xl:inline">{siteConfig.phone}</span>
               </a>
             )}
-            <Button
-              asChild
-              variant={isScrolled ? "default" : "glass"}
-              size="sm"
-            >
+            <Button asChild variant={isScrolled ? "default" : "glass"} size="sm">
               <Link href="/inquiry">Plan Your Trip</Link>
             </Button>
           </div>
@@ -120,10 +115,8 @@ export function Navbar() {
           <button
             type="button"
             className={cn(
-              "flex h-10 w-10 items-center justify-center rounded-xl lg:hidden transition-colors",
-              isScrolled
-                ? "bg-muted text-navy"
-                : "bg-white/15 text-white backdrop-blur-sm"
+              "flex h-10 w-10 items-center justify-center rounded-xl transition-colors lg:hidden",
+              isScrolled ? "bg-muted text-navy" : "bg-white/15 text-white backdrop-blur-sm"
             )}
             onClick={() => setIsMobileOpen(!isMobileOpen)}
             aria-label={isMobileOpen ? "Close menu" : "Open menu"}
@@ -134,59 +127,42 @@ export function Navbar() {
         </div>
       </header>
 
-      <AnimatePresence>
-        {isMobileOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-40 bg-navy/95 backdrop-blur-xl lg:hidden"
+      {isMobileOpen && (
+        <div className="fixed inset-0 z-40 animate-fade-in bg-navy/95 backdrop-blur-xl lg:hidden">
+          <nav
+            className="animate-slide-in-right flex h-full flex-col justify-center px-8 pt-20"
+            aria-label="Mobile navigation"
           >
-            <motion.nav
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "spring", damping: 30, stiffness: 300 }}
-              className="flex h-full flex-col justify-center px-8 pt-20"
-              aria-label="Mobile navigation"
-            >
-              {navLinks.map((link, i) => (
-                <motion.div
-                  key={link.href}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.05 }}
-                >
-                  <Link
-                    href={link.href}
-                    className="block border-b border-white/10 py-4 font-display text-2xl text-white transition-colors hover:text-gold"
-                    onClick={() => setIsMobileOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                </motion.div>
-              ))}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
-                className="mt-8 flex flex-col gap-3"
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="block border-b border-white/10 py-4 font-display text-2xl text-white transition-colors hover:text-gold"
+                onClick={() => setIsMobileOpen(false)}
               >
-                <Button asChild variant="accent" size="lg">
-                  <Link href="/inquiry" onClick={() => setIsMobileOpen(false)}>
-                    Plan Your Trip
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
-                  <Link href="/contact" onClick={() => setIsMobileOpen(false)}>
-                    Contact Us
-                  </Link>
-                </Button>
-              </motion.div>
-            </motion.nav>
-          </motion.div>
-        )}
-      </AnimatePresence>
+                {link.label}
+              </Link>
+            ))}
+            <div className="mt-8 flex flex-col gap-3">
+              <Button asChild variant="accent" size="lg">
+                <Link href="/inquiry" onClick={() => setIsMobileOpen(false)}>
+                  Plan Your Trip
+                </Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="border-white/30 text-white hover:bg-white/10"
+              >
+                <Link href="/contact" onClick={() => setIsMobileOpen(false)}>
+                  Contact Us
+                </Link>
+              </Button>
+            </div>
+          </nav>
+        </div>
+      )}
     </>
   );
 }

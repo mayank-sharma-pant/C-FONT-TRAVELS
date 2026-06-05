@@ -1,6 +1,6 @@
 /** Verified Unsplash URLs — only IDs that return HTTP 200. */
-const u = (id: string, width = 900) =>
-  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${width}&q=80`;
+const u = (id: string, width = 640) =>
+  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${width}&q=75`;
 
 export const images = {
   hero: {

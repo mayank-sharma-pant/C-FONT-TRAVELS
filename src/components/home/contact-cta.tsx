@@ -1,7 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/data/site";
 import { Button } from "@/components/ui/button";
@@ -10,13 +7,7 @@ export function ContactCta() {
   return (
     <section className="section-padding bg-white">
       <div className="container-wide">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-navy via-primary to-teal-light p-8 sm:p-12 lg:p-16"
-        >
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-navy via-primary to-teal-light p-8 sm:p-12 lg:p-16">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(201,169,98,0.2)_0%,_transparent_50%)]" />
           <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-gold/10 blur-3xl" />
           <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
@@ -48,19 +39,23 @@ export function ContactCta() {
                   Contact Us
                 </Link>
               </Button>
-              <Button
-                asChild={siteConfig.whatsapp !== "To Be Updated"}
-                variant="outline"
-                size="lg"
-                className="flex-1 border-white/30 text-white hover:bg-white/10"
-                disabled={siteConfig.whatsapp === "To Be Updated"}
-              >
-                {siteConfig.whatsapp === "To Be Updated" ? (
-                  <>
-                    <Phone className="h-4 w-4" />
-                    WhatsApp: To Be Updated
-                  </>
-                ) : (
+              {siteConfig.whatsapp === "To Be Updated" ? (
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="flex-1 border-white/30 text-white hover:bg-white/10"
+                  disabled
+                >
+                  <Phone className="h-4 w-4" />
+                  WhatsApp: To Be Updated
+                </Button>
+              ) : (
+                <Button
+                  asChild
+                  variant="outline"
+                  size="lg"
+                  className="flex-1 border-white/30 text-white hover:bg-white/10"
+                >
                   <a
                     href={`https://wa.me/${siteConfig.whatsapp.replace(/\D/g, "")}`}
                     target="_blank"
@@ -69,11 +64,11 @@ export function ContactCta() {
                     <Phone className="h-4 w-4" />
                     WhatsApp
                   </a>
-                )}
-              </Button>
+                </Button>
+              )}
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

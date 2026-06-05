@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { footerLinks, siteConfig } from "@/lib/data/site";
@@ -22,7 +20,7 @@ export function Footer() {
                 from C Font Travels, Siliguri.
               </p>
             </div>
-            <form className="flex flex-col gap-3 sm:flex-row" onSubmit={(e) => e.preventDefault()}>
+            <form className="flex flex-col gap-3 sm:flex-row">
               <Input
                 type="email"
                 placeholder="Enter your email"

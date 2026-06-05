@@ -1,8 +1,5 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { galleryImages } from "@/lib/data/content";
 import { SectionHeader } from "@/components/shared/section-header";
@@ -23,12 +20,8 @@ export function GalleryPreview() {
 
         <div className="columns-2 gap-4 space-y-4 md:columns-3">
           {previewImages.map((image, i) => (
-            <motion.div
+            <div
               key={image.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-30px" }}
-              transition={{ delay: i * 0.05, duration: 0.5 }}
               className="group relative break-inside-avoid overflow-hidden rounded-2xl"
             >
               <div
@@ -40,6 +33,7 @@ export function GalleryPreview() {
                   src={image.src}
                   alt={image.alt}
                   fill
+                  loading="lazy"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                   sizes="(max-width: 768px) 50vw, 33vw"
                 />
@@ -48,23 +42,18 @@ export function GalleryPreview() {
                   <p className="text-sm font-medium text-white">{image.alt}</p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="mt-12 text-center"
-        >
+        <div className="mt-12 text-center">
           <Button asChild variant="accent" size="lg">
             <Link href="/gallery">
               View Full Gallery
               <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { travelStats } from "@/lib/data/home";
 import { AnimatedCounter } from "@/components/shared/animated-counter";
 
@@ -12,25 +9,15 @@ export function TravelStats() {
 
       <div className="container-wide relative px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {travelStats.map((stat, i) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="text-center"
-            >
+          {travelStats.map((stat) => (
+            <div key={stat.label} className="text-center">
               <div className="font-display text-4xl font-semibold text-white sm:text-5xl lg:text-6xl">
-                <AnimatedCounter
-                  value={stat.value}
-                  suffix={stat.suffix}
-                />
+                <AnimatedCounter value={stat.value} suffix={stat.suffix} />
               </div>
               <p className="mt-2 text-sm font-medium uppercase tracking-wider text-white/70">
                 {stat.label}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
