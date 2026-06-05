@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { ArrowRight, Check, Clock, MapPin } from "lucide-react";
 import type { TourPackage } from "@/lib/data/packages";
 import { categoryLabels } from "@/lib/data/packages";
@@ -13,26 +12,18 @@ import { cn } from "@/lib/utils";
 
 interface PackageCardProps {
   pkg: TourPackage;
-  index?: number;
   variant?: "grid" | "horizontal";
   className?: string;
 }
 
 export function PackageCard({
   pkg,
-  index = 0,
   variant = "grid",
   className,
 }: PackageCardProps) {
   if (variant === "horizontal") {
     return (
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-50px" }}
-        transition={{ delay: index * 0.08, duration: 0.5 }}
-        className={className}
-      >
+      <div className={className}>
         <Card className="group overflow-hidden border-0 bg-white shadow-md transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
           <div className="grid sm:grid-cols-5">
             <div className="relative aspect-[4/3] sm:col-span-2 sm:aspect-auto sm:min-h-[240px]">
@@ -55,16 +46,12 @@ export function PackageCard({
             </CardContent>
           </div>
         </Card>
-      </motion.div>
+      </div>
     );
   }
 
   return (
-    <motion.article
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-40px" }}
-      transition={{ delay: (index % 6) * 0.05, duration: 0.45 }}
+    <article
       className={cn(
         "group flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-white shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-xl",
         className
@@ -92,7 +79,7 @@ export function PackageCard({
       <div className="flex flex-1 flex-col p-5 sm:p-6">
         <PackageCardBody pkg={pkg} compact />
       </div>
-    </motion.article>
+    </article>
   );
 }
 

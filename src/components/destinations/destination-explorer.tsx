@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { Search, SlidersHorizontal, X } from "lucide-react";
 import {
   allDestinations,
@@ -95,31 +94,18 @@ export function DestinationExplorer() {
           </div>
         </div>
 
-        <AnimatePresence mode="popLayout">
-          {filtered.length > 0 ? (
-            <motion.div
-              key={`${activeCategory}-${search}`}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
-              className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
-            >
-              {filtered.map((destination, i) => (
-                <DestinationCard
-                  key={destination.slug}
-                  destination={destination}
-                  variant="grid"
-                  index={i}
-                />
-              ))}
-            </motion.div>
-          ) : (
-            <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="rounded-2xl border border-dashed border-border bg-white py-16 text-center"
-            >
+        {filtered.length > 0 ? (
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {filtered.map((destination) => (
+              <DestinationCard
+                key={destination.slug}
+                destination={destination}
+                variant="grid"
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="rounded-2xl border border-dashed border-border bg-white py-16 text-center">
               <p className="font-display text-xl text-navy">
                 No destinations found
               </p>
@@ -136,9 +122,8 @@ export function DestinationExplorer() {
               >
                 Clear all filters
               </button>
-            </motion.div>
-          )}
-        </AnimatePresence>
+          </div>
+        )}
       </div>
     </section>
   );

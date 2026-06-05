@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar, MapPin, Search, Users } from "lucide-react";
 import { heroStats } from "@/lib/data/home";
+import { images } from "@/lib/images";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
@@ -15,7 +16,7 @@ export function HeroSection() {
     <section className="relative min-h-[100svh] overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1920&q=85"
+          src={images.hero.travel}
           alt="Scenic travel destination with mountains and adventure"
           fill
           priority

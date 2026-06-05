@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { ArrowRight, Clock, MapPin } from "lucide-react";
 import type { Destination } from "@/lib/data/destinations";
 import { Button } from "@/components/ui/button";
@@ -12,23 +11,17 @@ import { cn } from "@/lib/utils";
 interface DestinationCardProps {
   destination: Destination;
   variant?: "grid" | "featured" | "compact";
-  index?: number;
   className?: string;
 }
 
 export function DestinationCard({
   destination,
   variant = "grid",
-  index = 0,
   className,
 }: DestinationCardProps) {
   if (variant === "featured") {
     return (
-      <motion.article
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-50px" }}
-        transition={{ delay: index * 0.08, duration: 0.5 }}
+      <article
         className={cn(
           "group relative overflow-hidden rounded-3xl",
           className
@@ -74,7 +67,7 @@ export function DestinationCard({
             </Button>
           </div>
         </div>
-      </motion.article>
+      </article>
     );
   }
 
@@ -83,7 +76,7 @@ export function DestinationCard({
       <Link
         href={`/inquiry?destination=${destination.slug}`}
         className={cn(
-          "group flex shrink-0 gap-4 rounded-2xl border border-border/50 bg-white p-3 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md w-[280px] sm:w-[320px]",
+          "group flex w-[280px] shrink-0 gap-4 rounded-2xl border border-border/50 bg-white p-3 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md sm:w-[320px]",
           className
         )}
       >
@@ -97,7 +90,7 @@ export function DestinationCard({
           />
         </div>
         <div className="flex flex-col justify-center py-1">
-          <h3 className="font-display text-lg font-medium text-navy group-hover:text-primary transition-colors">
+          <h3 className="font-display text-lg font-medium text-navy transition-colors group-hover:text-primary">
             {destination.name}
           </h3>
           <p className="text-xs text-muted-foreground">{destination.region}</p>
@@ -110,11 +103,7 @@ export function DestinationCard({
   }
 
   return (
-    <motion.article
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-40px" }}
-      transition={{ delay: (index % 6) * 0.05, duration: 0.45 }}
+    <article
       className={cn(
         "group overflow-hidden rounded-2xl border border-border/50 bg-white shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-xl",
         className
@@ -125,6 +114,7 @@ export function DestinationCard({
           src={destination.image}
           alt={destination.name}
           fill
+          loading="lazy"
           className="object-cover transition-transform duration-700 group-hover:scale-110"
           sizes="(max-width: 768px) 100vw, 33vw"
         />
@@ -135,17 +125,13 @@ export function DestinationCard({
       </div>
 
       <div className="p-5 sm:p-6">
-        <div className="flex items-start justify-between gap-2">
-          <div>
-            <h3 className="font-display text-xl font-medium text-navy">
-              {destination.name}
-            </h3>
-            <p className="mt-0.5 flex items-center gap-1 text-xs text-muted-foreground">
-              <MapPin className="h-3 w-3" />
-              {destination.region}
-            </p>
-          </div>
-        </div>
+        <h3 className="font-display text-xl font-medium text-navy">
+          {destination.name}
+        </h3>
+        <p className="mt-0.5 flex items-center gap-1 text-xs text-muted-foreground">
+          <MapPin className="h-3 w-3" />
+          {destination.region}
+        </p>
         <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
           {destination.description}
         </p>
@@ -160,6 +146,6 @@ export function DestinationCard({
           </Link>
         </Button>
       </div>
-    </motion.article>
+    </article>
   );
 }

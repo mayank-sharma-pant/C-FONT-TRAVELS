@@ -6,6 +6,7 @@ import {
   Plane,
   Stamp,
 } from "lucide-react";
+import { images } from "@/lib/images";
 
 export const featuredServices = [
   {
@@ -14,8 +15,7 @@ export const featuredServices = [
     description:
       "Discover India's hidden gems with expertly curated domestic itineraries tailored to your preferences.",
     href: "/services#tour-packages",
-    image:
-      "https://images.unsplash.com/photo-1524492412937-280cef785803?w=800&q=80",
+    image: images.services.domestic,
   },
   {
     icon: Globe2,
@@ -23,8 +23,7 @@ export const featuredServices = [
     description:
       "Explore the world's most captivating destinations with seamless planning and premium experiences.",
     href: "/services#tour-packages",
-    image:
-      "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80",
+    image: images.services.international,
   },
   {
     icon: Plane,
@@ -32,8 +31,7 @@ export const featuredServices = [
     description:
       "Access competitive fares on domestic and international flights with flexible booking options.",
     href: "/services#flight-booking",
-    image:
-      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80",
+    image: images.services.flight,
   },
   {
     icon: Hotel,
@@ -41,8 +39,7 @@ export const featuredServices = [
     description:
       "Handpicked accommodations from boutique stays to luxury resorts at exclusive partner rates.",
     href: "/services#hotel-reservations",
-    image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+    image: images.services.hotel,
   },
   {
     icon: Stamp,
@@ -50,8 +47,7 @@ export const featuredServices = [
     description:
       "End-to-end visa support with document guidance, application tracking, and expert consultation.",
     href: "/services#visa-services",
-    image:
-      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+    image: images.services.visa,
   },
   {
     icon: Building2,
@@ -59,8 +55,7 @@ export const featuredServices = [
     description:
       "Streamlined business travel solutions with dedicated account management and cost optimization.",
     href: "/services#corporate-travel",
-    image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+    image: images.services.corporate,
   },
 ];
 

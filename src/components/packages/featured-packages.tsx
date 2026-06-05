@@ -17,8 +17,8 @@ export function FeaturedPackages() {
         />
 
         <div className="grid gap-8 md:grid-cols-2">
-          {featured.map((pkg, i) => (
-            <PackageCard key={pkg.slug} pkg={pkg} index={i} variant="horizontal" />
+          {featured.map((pkg) => (
+            <PackageCard key={pkg.slug} pkg={pkg} variant="horizontal" />
           ))}
         </div>
       </div>

@@ -1,9 +1,10 @@
+import { images } from "@/lib/images";
+
 export const aboutHero = {
   title: "About C Font Travels",
   description:
     "A premium travel agency built on passion, expertise, and an unwavering commitment to crafting journeys that inspire, delight, and transform.",
-  image:
-    "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&q=85",
+  image: images.hero.team,
 };
 
 export const companyStory = {
@@ -13,8 +14,7 @@ export const companyStory = {
     "What began as a small consultancy in New Delhi has grown into a trusted name serving thousands of travelers across India and beyond. From honeymooners seeking romantic escapes to corporations planning global retreats, we've built our reputation one exceptional journey at a time.",
     "Today, we offer a flexible suite of travel services — tour packages, flight and hotel booking, visa assistance, corporate travel, and bespoke itinerary planning — all delivered with the same personal touch that defined our earliest days.",
   ],
-  image:
-    "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=900&q=80",
+  image: images.about.story,
   stats: [
     { label: "Founded", value: "2014" },
     { label: "Team Members", value: "45+" },
@@ -78,8 +78,7 @@ export const whyWeStarted = {
     "Our founders, seasoned travelers themselves, experienced firsthand the frustration of cookie-cutter itineraries and hidden fees. They envisioned an agency that would treat every client like family — listening deeply, planning thoughtfully, and standing by you at every step.",
     "That vision became C Font Travels: a place where luxury meets authenticity, where adventure meets comfort, and where your travel story is written with care.",
   ],
-  image:
-    "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=900&q=80",
+  image: images.about.founder,
 };
 
 export const achievements = [
@@ -159,28 +158,24 @@ export const teamMembers = [
     name: "Rajesh Kapoor",
     role: "Founder & CEO",
     bio: "20+ years in travel and hospitality. Passionate about crafting bespoke luxury experiences.",
-    image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+    image: images.people.man1,
   },
   {
     name: "Priya Sharma",
     role: "Head of Operations",
     bio: "Expert in logistics and on-ground coordination across 85+ global destinations.",
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+    image: images.people.woman2,
   },
   {
     name: "Arjun Mehta",
     role: "Corporate Travel Director",
     bio: "Specializes in business travel, MICE events, and enterprise travel management.",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+    image: images.people.man2,
   },
   {
     name: "Anita Desai",
     role: "Visa & Documentation Lead",
     bio: "Guides clients through complex visa processes with a 97% first-time approval rate.",
-    image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+    image: images.people.woman2,
   },
 ];

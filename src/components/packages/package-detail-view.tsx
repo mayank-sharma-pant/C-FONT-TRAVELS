@@ -335,13 +335,8 @@ export function PackageDetailView({ pkg, detail }: PackageDetailViewProps) {
               title="Similar Packages You May Like"
             />
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {related.map((relatedPkg, i) => (
-                <PackageCard
-                  key={relatedPkg.slug}
-                  pkg={relatedPkg}
-                  index={i}
-                  variant="grid"
-                />
+              {related.map((relatedPkg) => (
+                <PackageCard key={relatedPkg.slug} pkg={relatedPkg} variant="grid" />
               ))}
             </div>
           </div>

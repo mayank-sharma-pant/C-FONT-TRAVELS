@@ -1,3 +1,12 @@
+import { images } from "@/lib/images";
+
+export const destinationsHero = {
+  title: "Destinations",
+  description:
+    "Discover handpicked destinations across the globe — from tropical beaches and alpine peaks to vibrant cities and cultural wonders.",
+  image: images.hero.road,
+};
+
 export type DestinationCategory =
   | "international"
   | "domestic"
@@ -20,14 +29,6 @@ export interface Destination {
   trending?: boolean;
 }
 
-export const destinationsHero = {
-  title: "Destinations",
-  description:
-    "Discover handpicked destinations across the globe — from tropical beaches and alpine peaks to vibrant cities and cultural wonders.",
-  image:
-    "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&q=85",
-};
-
 export const destinationCategories: {
   id: DestinationCategory | "all";
   label: string;
@@ -48,8 +49,7 @@ export const allDestinations: Destination[] = [
     name: "Dubai",
     description:
       "Luxury desert safaris, iconic skylines, and world-class shopping experiences.",
-    image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900&q=80",
+    image: images.destinations.dubai,
     price: "₹45,999",
     duration: "5 Days / 4 Nights",
     region: "Middle East",
@@ -62,8 +62,7 @@ export const allDestinations: Destination[] = [
     name: "Bali",
     description:
       "Tropical paradise with ancient temples, rice terraces, and pristine beaches.",
-    image:
-      "https://images.unsplash.com/photo-1537953773315-cb31c1177656?w=900&q=80",
+    image: images.destinations.bali,
     price: "₹52,999",
     duration: "6 Days / 5 Nights",
     region: "Southeast Asia",
@@ -76,8 +75,7 @@ export const allDestinations: Destination[] = [
     name: "Maldives",
     description:
       "Overwater villas, crystal-clear lagoons, and unparalleled romantic escapes.",
-    image:
-      "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=900&q=80",
+    image: images.destinations.maldives,
     price: "₹89,999",
     duration: "4 Days / 3 Nights",
     region: "Indian Ocean",
@@ -89,8 +87,7 @@ export const allDestinations: Destination[] = [
     name: "Europe",
     description:
       "Historic cities, alpine adventures, and cultural treasures across the continent.",
-    image:
-      "https://images.unsplash.com/photo-1467269209834-ffa99325fdb0?w=900&q=80",
+    image: images.destinations.europe,
     price: "₹1,25,999",
     duration: "10 Days / 9 Nights",
     region: "Europe",
@@ -103,8 +100,7 @@ export const allDestinations: Destination[] = [
     name: "Thailand",
     description:
       "Vibrant street life, golden temples, and idyllic island getaways.",
-    image:
-      "https://images.unsplash.com/photo-1552468611-9e0982a04584?w=900&q=80",
+    image: images.destinations.thailand,
     price: "₹38,999",
     duration: "5 Days / 4 Nights",
     region: "Southeast Asia",
@@ -116,8 +112,7 @@ export const allDestinations: Destination[] = [
     name: "Singapore",
     description:
       "Futuristic gardens, diverse cuisine, and family-friendly attractions.",
-    image:
-      "https://images.unsplash.com/photo-1525621487010-4878377f0d29?w=900&q=80",
+    image: images.destinations.singapore,
     price: "₹42,999",
     duration: "4 Days / 3 Nights",
     region: "Southeast Asia",
@@ -129,8 +124,7 @@ export const allDestinations: Destination[] = [
     name: "Kashmir",
     description:
       "Heaven on earth with snow-capped peaks, serene lakes, and houseboats.",
-    image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80",
+    image: images.destinations.kashmir,
     price: "₹18,999",
     duration: "5 Days / 4 Nights",
     region: "India",
@@ -142,8 +136,7 @@ export const allDestinations: Destination[] = [
     name: "Goa",
     description:
       "Sun-kissed beaches, Portuguese heritage, and vibrant nightlife.",
-    image:
-      "https://images.unsplash.com/photo-1512343879784-a960bf128e56?w=900&q=80",
+    image: images.destinations.goa,
     price: "₹12,999",
     duration: "4 Days / 3 Nights",
     region: "India",

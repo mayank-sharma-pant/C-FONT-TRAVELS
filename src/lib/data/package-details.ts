@@ -1,3 +1,5 @@
+import { images } from "@/lib/images";
+
 export interface ItineraryDay {
   day: number;
   title: string;
@@ -39,9 +41,9 @@ export const packageDetails: Record<string, PackageDetail> = {
       hotels: ["Address Downtown", "JW Marriott Marquis", "Palace Downtown"],
     },
     gallery: [
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80",
-      "https://images.unsplash.com/photo-1518684079-3c830d5adf2d?w=800&q=80",
-      "https://images.unsplash.com/photo-1582672060017-3ff8596d8331?w=800&q=80",
+      images.packageGallery.dubai1,
+      images.packageGallery.dubai2,
+      images.packageGallery.dubai3,
     ],
     faqs: [
       { question: "Is UAE visa included?", answer: "Visa assistance is available as an add-on service. Our team will guide you through the application process." },
@@ -70,9 +72,9 @@ export const packageDetails: Record<string, PackageDetail> = {
       hotels: ["Kayumanis Ubud", "The Seminyak Beach Resort", "Alila Ubud"],
     },
     gallery: [
-      "https://images.unsplash.com/photo-1537953773315-cb31c1177656?w=800&q=80",
-      "https://images.unsplash.com/photo-1518548419970-58e3b4079b2a?w=800&q=80",
-      "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800&q=80",
+      images.packageGallery.bali1,
+      images.packageGallery.bali2,
+      images.packageGallery.bali3,
     ],
     faqs: [
       { question: "Is this package only for honeymooners?", answer: "While designed for couples, anniversaries and romantic getaways are equally welcome." },
@@ -100,10 +102,7 @@ const defaultDetail: PackageDetail = {
     description: "Comfortable, well-located properties selected for quality, service, and convenience.",
     hotels: ["Partner hotels selected based on availability and season"],
   },
-  gallery: [
-    "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80",
-    "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80",
-  ],
+  gallery: [images.packageGallery.default1, images.packageGallery.default2],
   faqs: [
     { question: "Can I customize this package?", answer: "Yes, all packages can be tailored to your preferences, budget, and travel dates." },
     { question: "What is the cancellation policy?", answer: "Cancellation terms vary by package. Contact us for detailed policy information." },
@@ -111,8 +110,5 @@ const defaultDetail: PackageDetail = {
 };
 
 export function getPackageDetail(slug: string): PackageDetail {
-  return packageDetails[slug] ?? {
-    ...defaultDetail,
-    gallery: defaultDetail.gallery,
-  };
+  return packageDetails[slug] ?? defaultDetail;
 }

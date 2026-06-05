@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { ArrowRight, Check, Sparkles } from "lucide-react";
 import { services } from "@/lib/data/services";
 import { Button } from "@/components/ui/button";
@@ -13,8 +12,7 @@ export function ServiceShowcase() {
     <div>
       {services.map((service, index) => {
         const isReversed = index % 2 === 1;
-        const bgClass =
-          index % 2 === 0 ? "bg-white" : "bg-sand/40";
+        const bgClass = index % 2 === 0 ? "bg-white" : "bg-sand/40";
 
         return (
           <section
@@ -28,11 +26,7 @@ export function ServiceShowcase() {
                   isReversed ? "lg:[direction:rtl]" : ""
                 }`}
               >
-                <motion.div
-                  initial={{ opacity: 0, x: isReversed ? 24 : -24 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-80px" }}
-                  transition={{ duration: 0.6 }}
+                <div
                   className={`relative ${isReversed ? "lg:[direction:ltr]" : ""}`}
                 >
                   <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl">
@@ -40,6 +34,7 @@ export function ServiceShowcase() {
                       src={service.image}
                       alt={service.title}
                       fill
+                      loading={index < 2 ? "eager" : "lazy"}
                       className="object-cover"
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
@@ -48,15 +43,9 @@ export function ServiceShowcase() {
                   <div className="absolute -bottom-4 -right-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary shadow-lg sm:-bottom-6 sm:-right-6 sm:h-20 sm:w-20">
                     <service.icon className="h-8 w-8 text-white sm:h-9 sm:w-9" />
                   </div>
-                </motion.div>
+                </div>
 
-                <motion.div
-                  initial={{ opacity: 0, x: isReversed ? -24 : 24 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-80px" }}
-                  transition={{ duration: 0.6, delay: 0.1 }}
-                  className={isReversed ? "lg:[direction:ltr]" : ""}
-                >
+                <div className={isReversed ? "lg:[direction:ltr]" : ""}>
                   <Badge variant="accent" className="mb-4">
                     {service.tagline}
                   </Badge>
@@ -111,7 +100,7 @@ export function ServiceShowcase() {
                       <ArrowRight className="h-4 w-4" />
                     </Link>
                   </Button>
-                </motion.div>
+                </div>
               </div>
             </div>
           </section>

@@ -9,6 +9,7 @@ import {
   Stamp,
   Users,
 } from "lucide-react";
+import { images } from "@/lib/images";
 
 export interface Service {
   slug: string;
@@ -29,8 +30,7 @@ export const servicesHero = {
   title: "Our Services",
   description:
     "End-to-end travel solutions designed with flexibility in mind — from curated tour packages to visa support, corporate travel, and fully bespoke itineraries.",
-  image:
-    "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=85",
+  image: images.hero.flight,
 };
 
 export const servicesIntro = {
@@ -46,8 +46,7 @@ export const services: Service[] = [
     tagline: "Curated journeys, expertly planned",
     description:
       "Explore handpicked domestic and international tour packages crafted by our travel experts. From weekend getaways to multi-country expeditions, every itinerary balances adventure, comfort, and cultural immersion.",
-    image:
-      "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=900&q=80",
+    image: images.services.tour,
     icon: MapPinned,
     features: [
       "Domestic & international destinations",
@@ -69,8 +68,7 @@ export const services: Service[] = [
     tagline: "Competitive fares, seamless booking",
     description:
       "Book domestic and international flights at competitive rates through our airline partnerships. We compare options across carriers to find the best routes, timings, and fares for your schedule and budget.",
-    image:
-      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=900&q=80",
+    image: images.services.flight,
     icon: Plane,
     features: [
       "Domestic & international routes",
@@ -92,8 +90,7 @@ export const services: Service[] = [
     tagline: "Stays that match your style",
     description:
       "From boutique heritage properties to five-star luxury resorts, we source accommodations that align with your preferences and budget — with exclusive partner rates unavailable to the public.",
-    image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80",
+    image: images.services.hotel,
     icon: Hotel,
     features: [
       "Boutique, business & luxury properties",
@@ -115,8 +112,7 @@ export const services: Service[] = [
     tagline: "Documentation made simple",
     description:
       "Navigate complex visa requirements with expert guidance. Our documentation team handles application preparation, submission tracking, and follow-ups — so you can focus on planning the fun parts of your trip.",
-    image:
-      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&q=80",
+    image: images.services.visa,
     icon: Stamp,
     features: [
       "Tourist, business & transit visas",
@@ -138,8 +134,7 @@ export const services: Service[] = [
     tagline: "Business travel, simplified",
     description:
       "Streamline your company's travel operations with dedicated account management, policy compliance, expense reporting, and cost optimization — whether you're sending one executive or an entire team.",
-    image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80",
+    image: images.services.corporate,
     icon: Building2,
     features: [
       "Dedicated account manager",
@@ -161,8 +156,7 @@ export const services: Service[] = [
     tagline: "Memorable trips for every group",
     description:
       "Planning travel for families, friends, schools, or organizations? Our group tour specialists design cohesive itineraries with group discounts, coordinated logistics, and activities that keep everyone engaged.",
-    image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=900&q=80",
+    image: images.services.group,
     icon: Users,
     features: [
       "Groups of 10 to 200+ travelers",
@@ -184,8 +178,7 @@ export const services: Service[] = [
     tagline: "Romance, perfectly planned",
     description:
       "Celebrate your love with a honeymoon designed for two. From overwater villas in the Maldives to vineyard escapes in Tuscany — we create intimate, luxurious experiences with thoughtful surprises along the way.",
-    image:
-      "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=900&q=80",
+    image: images.services.honeymoon,
     icon: Heart,
     features: [
       "Romantic destinations worldwide",
@@ -207,8 +200,7 @@ export const services: Service[] = [
     tagline: "Your vision, our expertise",
     description:
       "For travelers who want something truly unique — our bespoke planning service builds entirely custom itineraries from scratch. Tell us your dreams, budget, and preferences; we'll design a one-of-a-kind journey.",
-    image:
-      "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=900&q=80",
+    image: images.services.custom,
     icon: Compass,
     features: [
       "Fully bespoke itinerary design",

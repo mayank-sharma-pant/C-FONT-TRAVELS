@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpDown, Search, X } from "lucide-react";
 import {
   tourPackages,
@@ -135,26 +134,14 @@ export function PackageExplorer() {
           </p>
         </div>
 
-        <AnimatePresence mode="popLayout">
-          {filtered.length > 0 ? (
-            <motion.div
-              key={`${activeCategory}-${search}-${sortBy}`}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
-              className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
-            >
-              {filtered.map((pkg, i) => (
-                <PackageCard key={pkg.slug} pkg={pkg} index={i} variant="grid" />
-              ))}
-            </motion.div>
-          ) : (
-            <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="rounded-2xl border border-dashed border-border bg-white py-16 text-center"
-            >
+        {filtered.length > 0 ? (
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {filtered.map((pkg) => (
+                <PackageCard key={pkg.slug} pkg={pkg} variant="grid" />
+            ))}
+          </div>
+        ) : (
+          <div className="rounded-2xl border border-dashed border-border bg-white py-16 text-center">
               <p className="font-display text-xl text-navy">No packages found</p>
               <p className="mt-2 text-sm text-muted-foreground">
                 Try a different search term or category filter.
@@ -170,9 +157,8 @@ export function PackageExplorer() {
               >
                 Reset filters
               </button>
-            </motion.div>
-          )}
-        </AnimatePresence>
+          </div>
+        )}
       </div>
     </section>
   );

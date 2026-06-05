@@ -15,12 +15,11 @@ export function PopularDestinations() {
         />
 
         <div className="grid gap-6 md:grid-cols-2">
-          {featuredDestinations.map((destination, i) => (
+          {featuredDestinations.map((destination) => (
             <DestinationCard
               key={destination.slug}
               destination={destination}
               variant="featured"
-              index={i}
             />
           ))}
         </div>

@@ -1,3 +1,5 @@
+import { images } from "@/lib/images";
+
 export type PackageCategory =
   | "adventure"
   | "family"
@@ -29,8 +31,7 @@ export const packagesHero = {
   title: "Tour Packages",
   description:
     "Handcrafted itineraries for every travel style — adventure, family, luxury, honeymoon, and group journeys with transparent pricing and premium inclusions.",
-  image:
-    "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1920&q=85",
+  image: images.hero.packages,
 };
 
 export const packageCategories: {
@@ -60,8 +61,7 @@ export const tourPackages: TourPackage[] = [
     duration: "5 Days / 4 Nights",
     price: 45999,
     priceDisplay: "₹45,999",
-    image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900&q=80",
+    image: images.packages.dubai,
     category: "luxury",
     highlights: ["Burj Khalifa", "Desert Safari", "Dhow Cruise", "Gold Souk"],
     description:
@@ -75,8 +75,7 @@ export const tourPackages: TourPackage[] = [
     duration: "7 Days / 6 Nights",
     price: 68999,
     priceDisplay: "₹68,999",
-    image:
-      "https://images.unsplash.com/photo-1537953773315-cb31c1177656?w=900&q=80",
+    image: images.packages.bali,
     category: "honeymoon",
     highlights: [
       "Private Villa",
@@ -95,8 +94,7 @@ export const tourPackages: TourPackage[] = [
     duration: "8 Days / 7 Nights",
     price: 145999,
     priceDisplay: "₹1,45,999",
-    image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80",
+    image: images.packages.swiss,
     category: "adventure",
     highlights: ["Jungfraujoch", "Paragliding", "Glacier Walk", "Scenic Train"],
     description:
@@ -110,8 +108,7 @@ export const tourPackages: TourPackage[] = [
     duration: "6 Days / 5 Nights",
     price: 24999,
     priceDisplay: "₹24,999",
-    image:
-      "https://images.unsplash.com/photo-1583417315888-31555658d638?w=900&q=80",
+    image: images.packages.kerala,
     category: "family",
     highlights: [
       "Houseboat Cruise",
@@ -130,8 +127,7 @@ export const tourPackages: TourPackage[] = [
     duration: "5 Days / 4 Nights",
     price: 79999,
     priceDisplay: "₹79,999",
-    image:
-      "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=900&q=80",
+    image: images.packages.maldives,
     category: "group",
     highlights: ["Snorkeling", "Island Hopping", "Beach BBQ", "Water Sports"],
     description:
@@ -144,8 +140,7 @@ export const tourPackages: TourPackage[] = [
     duration: "12 Days / 11 Nights",
     price: 189999,
     priceDisplay: "₹1,89,999",
-    image:
-      "https://images.unsplash.com/photo-1467269209834-ffa99325fdb0?w=900&q=80",
+    image: images.packages.europe,
     category: "luxury",
     highlights: ["Paris", "Swiss Alps", "Venice", "Barcelona"],
     description:
@@ -158,8 +153,7 @@ export const tourPackages: TourPackage[] = [
     duration: "7 Days / 6 Nights",
     price: 32999,
     priceDisplay: "₹32,999",
-    image:
-      "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=900&q=80",
+    image: images.packages.rajasthan,
     category: "adventure",
     highlights: ["Desert Camping", "Fort Tours", "Camel Safari", "Folk Culture"],
     description:
@@ -172,8 +166,7 @@ export const tourPackages: TourPackage[] = [
     duration: "6 Days / 5 Nights",
     price: 54999,
     priceDisplay: "₹54,999",
-    image:
-      "https://images.unsplash.com/photo-1552468611-9e0982a04584?w=900&q=80",
+    image: images.packages.thailand,
     category: "family",
     highlights: ["Theme Parks", "Island Hopping", "Temple Tours", "Beach Resort"],
     description:
@@ -186,8 +179,7 @@ export const tourPackages: TourPackage[] = [
     duration: "5 Days / 4 Nights",
     price: 94999,
     priceDisplay: "₹94,999",
-    image:
-      "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=900&q=80",
+    image: images.packages.maldives,
     category: "honeymoon",
     highlights: [
       "Overwater Villa",
@@ -205,8 +197,7 @@ export const tourPackages: TourPackage[] = [
     duration: "4 Days / 3 Nights",
     price: 14999,
     priceDisplay: "₹14,999",
-    image:
-      "https://images.unsplash.com/photo-1512343879784-a960bf128e56?w=900&q=80",
+    image: images.packages.goa,
     category: "group",
     highlights: ["Beach Parties", "Water Sports", "Heritage Walk", "Seafood Tour"],
     description:
