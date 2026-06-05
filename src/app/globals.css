@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf9f7;
+  --foreground: #0a1628;
+  --card: #ffffff;
+  --card-foreground: #0a1628;
+  --popover: #ffffff;
+  --popover-foreground: #0a1628;
+  --primary: #0d4f5c;
+  --primary-foreground: #faf9f7;
+  --secondary: #f0ebe3;
+  --secondary-foreground: #0a1628;
+  --muted: #eef1f4;
+  --muted-foreground: #5c6678;
+  --accent: #c9a962;
+  --accent-foreground: #0a1628;
+  --destructive: #dc2626;
+  --destructive-foreground: #faf9f7;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #0d4f5c;
+  --radius: 0.75rem;
+
+  --navy: #0a1628;
+  --teal: #0d4f5c;
+  --teal-light: #1a7a8c;
+  --gold: #c9a962;
+  --gold-light: #dfc88a;
+  --cream: #faf9f7;
+  --sand: #f0ebe3;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-navy: var(--navy);
+  --color-teal: var(--teal);
+  --color-teal-light: var(--teal-light);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-cream: var(--cream);
+  --color-sand: var(--sand);
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-playfair);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display), Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl;
+  }
+
+  .glass-dark {
+    @apply bg-navy/80 backdrop-blur-xl border border-white/10 shadow-xl;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent;
+  }
+
+  .section-padding {
+    @apply px-4 py-20 sm:px-6 lg:px-8 lg:py-28;
+  }
+
+  .container-wide {
+    @apply mx-auto max-w-7xl;
+  }
+}

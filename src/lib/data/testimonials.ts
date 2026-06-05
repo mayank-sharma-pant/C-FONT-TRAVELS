@@ -1,0 +1,38 @@
+export const testimonials = [
+  {
+    id: 1,
+    name: "Priya & Rahul Sharma",
+    location: "Mumbai, India",
+    rating: 5,
+    text: "Our honeymoon in Bali was absolutely magical. C Font Travels handled every detail flawlessly — from the private villa to the surprise sunset dinner. We couldn't have asked for a better experience.",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+    trip: "Bali Honeymoon Retreat",
+  },
+  {
+    id: 2,
+    name: "Arjun Mehta",
+    location: "Bangalore, India",
+    rating: 5,
+    text: "Booked a corporate retreat for our team of 30 to Dubai. The logistics were impeccable, and the custom itinerary kept everyone engaged. Professional service from start to finish.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+    trip: "Dubai Corporate Retreat",
+  },
+  {
+    id: 3,
+    name: "Sneha Kapoor",
+    location: "Delhi, India",
+    rating: 5,
+    text: "The visa assistance team made our Europe trip stress-free. They guided us through every document requirement and our visas were approved within a week. Highly recommend!",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+    trip: "Europe Grand Tour",
+  },
+  {
+    id: 4,
+    name: "Vikram & Ananya Reddy",
+    location: "Hyderabad, India",
+    rating: 5,
+    text: "Our family trip to Kerala was perfectly planned for all ages — from grandparents to our 5-year-old. The houseboat experience was the highlight of our year!",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+    trip: "Kerala Family Getaway",
+  },
+];

@@ -1,0 +1,70 @@
+export const featuredDestinations = [
+  {
+    slug: "dubai",
+    name: "Dubai",
+    description: "Luxury desert safaris, iconic skylines, and world-class shopping experiences.",
+    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900&q=80",
+    price: "₹45,999",
+    duration: "5 Days / 4 Nights",
+  },
+  {
+    slug: "bali",
+    name: "Bali",
+    description: "Tropical paradise with ancient temples, rice terraces, and pristine beaches.",
+    image: "https://images.unsplash.com/photo-1537996195421-7ca854e8439e?w=900&q=80",
+    price: "₹52,999",
+    duration: "6 Days / 5 Nights",
+  },
+  {
+    slug: "maldives",
+    name: "Maldives",
+    description: "Overwater villas, crystal-clear lagoons, and unparalleled romantic escapes.",
+    image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=900&q=80",
+    price: "₹89,999",
+    duration: "4 Days / 3 Nights",
+  },
+  {
+    slug: "europe",
+    name: "Europe",
+    description: "Historic cities, alpine adventures, and cultural treasures across the continent.",
+    image: "https://images.unsplash.com/photo-1467269209834-ffa99325fdb0?w=900&q=80",
+    price: "₹1,25,999",
+    duration: "10 Days / 9 Nights",
+  },
+];
+
+export const allDestinations = [
+  ...featuredDestinations,
+  {
+    slug: "thailand",
+    name: "Thailand",
+    description: "Vibrant street life, golden temples, and idyllic island getaways.",
+    image: "https://images.unsplash.com/photo-1528183429752-a97d0df99369?w=900&q=80",
+    price: "₹38,999",
+    duration: "5 Days / 4 Nights",
+  },
+  {
+    slug: "singapore",
+    name: "Singapore",
+    description: "Futuristic gardens, diverse cuisine, and family-friendly attractions.",
+    image: "https://images.unsplash.com/photo-1525621487010-4878377f0d29?w=900&q=80",
+    price: "₹42,999",
+    duration: "4 Days / 3 Nights",
+  },
+  {
+    slug: "kashmir",
+    name: "Kashmir",
+    description: "Heaven on earth with snow-capped peaks, serene lakes, and houseboats.",
+    image: "https://images.unsplash.com/photo-1595818914-7a2a2b5c4c0e?w=900&q=80",
+    price: "₹18,999",
+    duration: "5 Days / 4 Nights",
+  },
+  {
+    slug: "goa",
+    name: "Goa",
+    description: "Sun-kissed beaches, Portuguese heritage, and vibrant nightlife.",
+    image: "https://images.unsplash.com/photo-1512343879784-a960bf128e56?w=900&q=80",
+    price: "₹12,999",
+    duration: "4 Days / 3 Nights",
+  },
+];
