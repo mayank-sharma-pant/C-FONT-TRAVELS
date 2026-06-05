@@ -1,59 +1,59 @@
 import {
   Building2,
-  Globe2,
-  Hotel,
+  Bus,
+  Car,
   MapPin,
   Plane,
-  Stamp,
+  TrainFront,
 } from "lucide-react";
 import { images } from "@/lib/images";
 
 export const featuredServices = [
   {
     icon: MapPin,
-    title: "Domestic Tours",
+    title: "Tour Packages",
     description:
-      "Discover India's hidden gems with expertly curated domestic itineraries tailored to your preferences.",
+      "Customized tour packages for Darjeeling, Sikkim, Gangtok, Bhutan, Dooars, and popular destinations across North Bengal and beyond.",
     href: "/services#tour-packages",
+    image: images.services.tour,
+  },
+  {
+    icon: Bus,
+    title: "Transport Services",
+    description:
+      "Safe and reliable point-to-point transport for local travel, sightseeing, inter-city journeys, and group movements with experienced drivers.",
+    href: "/services#transport-services",
     image: images.services.domestic,
   },
   {
-    icon: Globe2,
-    title: "International Tours",
+    icon: Car,
+    title: "Vehicle Rentals",
     description:
-      "Explore the world's most captivating destinations with seamless planning and premium experiences.",
-    href: "/services#tour-packages",
-    image: images.services.international,
-  },
-  {
-    icon: Plane,
-    title: "Flight Booking",
-    description:
-      "Access competitive fares on domestic and international flights with flexible booking options.",
-    href: "/services#flight-booking",
+      "Well-maintained cars, SUVs, and tempo travellers for family trips, corporate travel, tours, and daily rental requirements.",
+    href: "/services#vehicle-rentals",
     image: images.services.flight,
   },
   {
-    icon: Hotel,
-    title: "Hotel Booking",
+    icon: Plane,
+    title: "Airport Transfers",
     description:
-      "Handpicked accommodations from boutique stays to luxury resorts at exclusive partner rates.",
-    href: "/services#hotel-reservations",
+      "Punctual pick-up and drop services from Bagdogra Airport and nearby locations with comfortable vehicles and professional coordination.",
+    href: "/services#airport-transfers",
     image: images.services.hotel,
   },
   {
-    icon: Stamp,
-    title: "Visa Assistance",
+    icon: TrainFront,
+    title: "Railway Transfers",
     description:
-      "End-to-end visa support with document guidance, application tracking, and expert consultation.",
-    href: "/services#visa-services",
+      "Hassle-free railway station transfers from New Jalpaiguri, Siliguri Junction, and other nearby stations for individuals and groups.",
+    href: "/services#railway-station-transfers",
     image: images.services.visa,
   },
   {
     icon: Building2,
     title: "Corporate Travel",
     description:
-      "Streamlined business travel solutions with dedicated account management and cost optimization.",
+      "Dependable transport and travel solutions for businesses, institutions, events, and official travel across the region.",
     href: "/services#corporate-travel",
     image: images.services.corporate,
   },
@@ -61,42 +61,42 @@ export const featuredServices = [
 
 export const whyChooseUs = [
   {
-    title: "Trusted Travel Experts",
+    title: "Local Destination Expertise",
     description:
-      "Over a decade of experience crafting memorable journeys for thousands of satisfied travelers.",
+      "Deep knowledge of North Bengal, Sikkim, Darjeeling, Bhutan, and nearby hill destinations for better planning and smoother travel.",
   },
   {
-    title: "Best Prices",
+    title: "Reliable Transportation",
     description:
-      "Exclusive partnerships with airlines, hotels, and tour operators ensure unbeatable value.",
+      "Professional drivers, well-maintained vehicles, and dependable service for tours, transfers, and rental requirements.",
   },
   {
-    title: "Personalized Packages",
+    title: "Custom Travel Planning",
     description:
-      "Every itinerary is tailored to your interests, budget, and travel style — never one-size-fits-all.",
+      "Flexible packages and itineraries tailored to your budget, schedule, group size, and preferred travel style.",
   },
   {
-    title: "24/7 Support",
+    title: "Customer-First Service",
     description:
-      "Round-the-clock assistance before, during, and after your trip for complete peace of mind.",
+      "Friendly support, clear communication, and a strong focus on comfort, safety, and customer satisfaction.",
   },
   {
-    title: "Secure Booking Process",
+    title: "Trusted Siliguri Partner",
     description:
-      "Industry-leading security protocols and transparent pricing with no hidden fees.",
+      "A locally based travel and transport company serving tourists, families, corporates, and groups from Siliguri and across the region.",
   },
 ];
 
 export const heroStats = [
-  { value: 15000, suffix: "+", label: "Happy Travelers" },
-  { value: 85, suffix: "+", label: "Destinations" },
-  { value: 12, suffix: "+", label: "Years Experience" },
-  { value: 98, suffix: "%", label: "Satisfaction Rate" },
+  { value: 5000, suffix: "+", label: "Happy Travelers" },
+  { value: 15, suffix: "+", label: "Destinations" },
+  { value: 10, suffix: "+", label: "Years Experience" },
+  { value: 99, suffix: "%", label: "Satisfaction Rate" },
 ];
 
 export const travelStats = [
-  { value: 15000, suffix: "+", label: "Happy Travelers" },
-  { value: 85, suffix: "+", label: "Destinations Covered" },
-  { value: 12, suffix: "+", label: "Years of Experience" },
-  { value: 9800, suffix: "+", label: "Successful Trips" },
+  { value: 5000, suffix: "+", label: "Happy Travelers" },
+  { value: 15, suffix: "+", label: "Destinations Covered" },
+  { value: 10, suffix: "+", label: "Years of Experience" },
+  { value: 2500, suffix: "+", label: "Successful Trips" },
 ];

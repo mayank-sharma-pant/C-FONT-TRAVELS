@@ -28,9 +28,8 @@ export function AboutCta() {
                 Ready to Experience the C Font Difference?
               </h2>
               <p className="mt-4 max-w-lg text-base leading-relaxed text-white/70">
-                Whether you&apos;re planning your first international trip or your
-                fiftieth — our team is here to make it seamless, personal, and
-                unforgettable.
+                Whether you need a family tour, group travel, airport transfer, or
+                customized Sikkim and Darjeeling package — our Siliguri team is ready to assist.
               </p>
             </div>
 

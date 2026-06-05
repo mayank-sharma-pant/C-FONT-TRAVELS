@@ -24,8 +24,8 @@ export function DestinationsCta() {
               Can&apos;t Decide? We&apos;ll Help You Choose
             </h2>
             <p className="mt-4 text-base leading-relaxed text-white/70">
-              Share your travel preferences and our experts will recommend the
-              perfect destination — tailored to your budget, dates, and dreams.
+              Share your destination, travel dates, and group size — our Siliguri
+              team will recommend the best tour or transport option for you.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button asChild variant="accent" size="lg">

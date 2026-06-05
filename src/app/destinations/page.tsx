@@ -9,7 +9,7 @@ import { destinationsHero } from "@/lib/data/destinations";
 export const metadata: Metadata = {
   title: "Destinations",
   description:
-    "Explore curated travel destinations with C Font Travels — Dubai, Bali, Thailand, Singapore, Maldives, Kashmir, Goa, Europe and more.",
+    "Explore travel destinations with C Font Travels — Darjeeling, Gangtok, Sikkim, Bhutan, Dooars, Kalimpong, Mirik, North Bengal, and more.",
 };
 
 export default function DestinationsPage() {

@@ -23,8 +23,8 @@ export function WhyChooseUs() {
       <div className="container-wide relative">
         <SectionHeader
           eyebrow="Why Choose Us"
-          title="Travel with Confidence & Excellence"
-          description="We go beyond booking — we partner with you to create journeys that exceed expectations at every step."
+          title="Why Travelers Choose C Font Travels"
+          description="Local knowledge, reliable transport, comfortable journeys, and customer-first service across North Bengal and nearby destinations."
           light
         />
 

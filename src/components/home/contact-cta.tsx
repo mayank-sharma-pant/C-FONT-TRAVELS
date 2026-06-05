@@ -27,12 +27,11 @@ export function ContactCta() {
                 Ready to Explore?
               </span>
               <h2 className="mt-4 font-display text-3xl font-medium text-white sm:text-4xl lg:text-5xl">
-                Let Us Plan Your Dream Vacation
+                Plan Your Next Trip with C Font Travels
               </h2>
               <p className="mt-4 max-w-lg text-base leading-relaxed text-white/70">
-                Whether you&apos;re dreaming of a romantic escape, family adventure,
-                or corporate retreat — our travel experts are ready to craft your
-                perfect itinerary.
+                Need a Darjeeling tour, Sikkim package, airport transfer, or rental vehicle?
+                Our team is ready to help you travel comfortably and confidently.
               </p>
             </div>
 
@@ -49,15 +48,28 @@ export function ContactCta() {
                   Contact Us
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="flex-1 border-white/30 text-white hover:bg-white/10">
-                <a
-                  href={`https://wa.me/${siteConfig.whatsapp.replace(/\D/g, "")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Phone className="h-4 w-4" />
-                  WhatsApp
-                </a>
+              <Button
+                asChild={siteConfig.whatsapp !== "To Be Updated"}
+                variant="outline"
+                size="lg"
+                className="flex-1 border-white/30 text-white hover:bg-white/10"
+                disabled={siteConfig.whatsapp === "To Be Updated"}
+              >
+                {siteConfig.whatsapp === "To Be Updated" ? (
+                  <>
+                    <Phone className="h-4 w-4" />
+                    WhatsApp: To Be Updated
+                  </>
+                ) : (
+                  <a
+                    href={`https://wa.me/${siteConfig.whatsapp.replace(/\D/g, "")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Phone className="h-4 w-4" />
+                    WhatsApp
+                  </a>
+                )}
               </Button>
             </div>
           </div>

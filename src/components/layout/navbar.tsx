@@ -63,7 +63,7 @@ export function Navbar() {
                   isScrolled ? "text-muted-foreground" : "text-white/70"
                 )}
               >
-                Premium Journeys
+                Tour & Travel · Siliguri
               </span>
             </div>
           </Link>
@@ -86,16 +86,28 @@ export function Navbar() {
           </nav>
 
           <div className="hidden items-center gap-3 lg:flex">
-            <a
-              href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
-              className={cn(
-                "flex items-center gap-2 text-sm font-medium transition-colors",
-                isScrolled ? "text-muted-foreground" : "text-white/80"
-              )}
-            >
-              <Phone className="h-4 w-4" />
-              <span className="hidden xl:inline">{siteConfig.phone}</span>
-            </a>
+            {siteConfig.phone === "To Be Updated" ? (
+              <span
+                className={cn(
+                  "flex items-center gap-2 text-sm font-medium",
+                  isScrolled ? "text-muted-foreground" : "text-white/80"
+                )}
+              >
+                <Phone className="h-4 w-4" />
+                <span className="hidden xl:inline">{siteConfig.phone}</span>
+              </span>
+            ) : (
+              <a
+                href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
+                className={cn(
+                  "flex items-center gap-2 text-sm font-medium transition-colors",
+                  isScrolled ? "text-muted-foreground" : "text-white/80"
+                )}
+              >
+                <Phone className="h-4 w-4" />
+                <span className="hidden xl:inline">{siteConfig.phone}</span>
+              </a>
+            )}
             <Button
               asChild
               variant={isScrolled ? "default" : "glass"}

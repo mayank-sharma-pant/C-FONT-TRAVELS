@@ -11,7 +11,7 @@ export function Timeline() {
         <SectionHeader
           eyebrow="Our Journey"
           title="A Decade of Growth & Discovery"
-          description="From a single office in Delhi to a nationwide travel brand — here's how we've evolved."
+          description="Our journey as a trusted tour and transport company serving travelers from Siliguri across North Bengal and nearby destinations."
         />
 
         <div className="relative mx-auto max-w-3xl">

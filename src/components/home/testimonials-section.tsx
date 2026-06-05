@@ -15,8 +15,8 @@ export function TestimonialsSection() {
       <div className="container-wide">
         <SectionHeader
           eyebrow="Testimonials"
-          title="Stories from Our Happy Travelers"
-          description="Real experiences from real people who trusted us to make their travel dreams come true."
+          title="What Our Customers Say"
+          description="Real feedback from travelers who chose C Font Travels for tours, transfers, and transport services across the region."
         />
 
         <div className="grid gap-6 md:grid-cols-2">

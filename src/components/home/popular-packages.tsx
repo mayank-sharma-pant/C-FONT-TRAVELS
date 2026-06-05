@@ -18,8 +18,8 @@ export function PopularPackages() {
       <div className="container-wide">
         <SectionHeader
           eyebrow="Tour Packages"
-          title="Popular Journeys Loved by Travelers"
-          description="Curated itineraries with premium accommodations, expert guides, and unforgettable experiences."
+          title="Popular Tour Packages"
+          description="Handpicked packages for Darjeeling, Sikkim, Bhutan, Dooars, and more — with transparent pricing and reliable travel support."
         />
 
         <div className="grid gap-8 md:grid-cols-2">

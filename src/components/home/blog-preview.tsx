@@ -19,7 +19,7 @@ export function BlogPreview() {
         <SectionHeader
           eyebrow="Travel Blog"
           title="Insights & Inspiration"
-          description="Expert guides, destination tips, and travel stories to fuel your next adventure."
+          description="Travel tips, destination guides, and useful information for planning trips from Siliguri and North Bengal."
         />
 
         <div className="grid gap-8 lg:grid-cols-2">

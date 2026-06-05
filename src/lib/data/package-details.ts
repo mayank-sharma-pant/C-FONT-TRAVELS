@@ -21,91 +21,77 @@ export interface PackageDetail {
 }
 
 export const packageDetails: Record<string, PackageDetail> = {
-  "dubai-luxury-escape": {
+  "darjeeling-tea-hills-tour": {
     overview: [
-      "Experience the pinnacle of Arabian luxury with our curated Dubai escape. From soaring skyscrapers to golden desert dunes, every moment is designed for discerning travelers.",
-      "Enjoy premium 5-star accommodations, private airport transfers, and exclusive access to Dubai's most iconic attractions with skip-the-line privileges.",
+      "Experience the charm of Darjeeling with this compact hill tour covering sunrise views, tea gardens, local markets, and iconic sightseeing points.",
+      "Ideal for families, couples, and first-time visitors looking for a comfortable trip from Siliguri with reliable transport and local planning support.",
     ],
     itinerary: [
-      { day: 1, title: "Arrival & Marina Welcome", description: "Private transfer to your luxury hotel. Evening Dhow cruise with gourmet dinner on Dubai Marina." },
-      { day: 2, title: "City Icons", description: "Visit Burj Khalifa (Level 124), Dubai Mall, and the Dubai Fountain show. Afternoon at leisure." },
-      { day: 3, title: "Desert Safari Adventure", description: "Premium desert safari with dune bashing, camel ride, BBQ dinner, and live entertainment." },
-      { day: 4, title: "Culture & Gold", description: "Explore Old Dubai, Gold Souk, and Spice Souk. Optional spa treatment at your hotel." },
-      { day: 5, title: "Departure", description: "Leisurely breakfast and private transfer to the airport." },
+      { day: 1, title: "Siliguri to Darjeeling", description: "Depart from Siliguri and arrive in Darjeeling. Evening leisure at Mall Road." },
+      { day: 2, title: "Darjeeling Sightseeing", description: "Early morning Tiger Hill visit, Batasia Loop, Ghoom Monastery, and tea garden stop." },
+      { day: 3, title: "Return Journey", description: "Morning leisure and return transfer to Siliguri." },
     ],
-    included: ["5-star hotel accommodation", "Daily breakfast", "Private airport transfers", "Burj Khalifa tickets", "Desert safari with dinner", "Dhow cruise with dinner", "All applicable taxes"],
-    excluded: ["International flights", "UAE visa fees", "Personal expenses", "Travel insurance", "Optional activities not mentioned"],
+    included: ["Transport from Siliguri", "Hotel accommodation", "Basic sightseeing", "Driver assistance", "Trip coordination"],
+    excluded: ["Personal expenses", "Entry tickets not mentioned", "Meals unless specified", "Travel insurance"],
     accommodation: {
-      title: "Premium 5-Star Hotels",
-      description: "Stay at handpicked luxury properties in Downtown Dubai or Dubai Marina with world-class amenities.",
-      hotels: ["Address Downtown", "JW Marriott Marquis", "Palace Downtown"],
+      title: "Comfortable Hill Stay",
+      description: "Standard to deluxe hotel options in Darjeeling based on package selection and availability.",
+      hotels: ["Partner hotels in Darjeeling town and nearby areas"],
     },
-    gallery: [
-      images.packageGallery.dubai1,
-      images.packageGallery.dubai2,
-      images.packageGallery.dubai3,
-    ],
+    gallery: [images.packageGallery.default1, images.packageGallery.default2, images.packages.swiss],
     faqs: [
-      { question: "Is UAE visa included?", answer: "Visa assistance is available as an add-on service. Our team will guide you through the application process." },
-      { question: "Can I customize the itinerary?", answer: "Absolutely. We can adjust activities, upgrade hotels, or extend your stay upon request." },
+      { question: "Can this package start from Bagdogra Airport?", answer: "Yes, airport pickup can be arranged on request with adjusted pricing." },
+      { question: "Is the package customizable?", answer: "Yes, duration, hotel category, and sightseeing can be customized." },
     ],
   },
-  "bali-honeymoon-retreat": {
+  "gangtok-sikkim-explorer": {
     overview: [
-      "Celebrate your love in Bali's most romantic settings — private villas, sunset dinners, and couple spa rituals in paradise.",
-      "This intimate itinerary balances relaxation with cultural discovery through Ubud's rice terraces and Seminyak's beachfront elegance.",
+      "Discover Gangtok and nearby Sikkim highlights with a well-paced itinerary designed for comfortable travel and scenic experiences.",
+      "Perfect for families and groups wanting a guided introduction to Sikkim's capital and surrounding attractions.",
     ],
     itinerary: [
-      { day: 1, title: "Welcome to Paradise", description: "Airport pickup and check-in to your private pool villa in Seminyak." },
-      { day: 2, title: "Ubud Discovery", description: "Visit Tegallalang Rice Terraces, Sacred Monkey Forest, and a traditional Balinese cooking class." },
-      { day: 3, title: "Couple Spa Day", description: "Full-day spa retreat with traditional Balinese massage, flower bath, and organic lunch." },
-      { day: 4, title: "Sunset Romance", description: "Private beach dinner setup with personal butler service and live acoustic music." },
-      { day: 5, title: "Temple & Culture", description: "Visit Tanah Lot temple at sunset. Free evening for exploration." },
-      { day: 6, title: "Leisure Day", description: "Relax at your villa or optional water sports and island activities." },
-      { day: 7, title: "Departure", description: "Farewell breakfast and transfer to the airport." },
+      { day: 1, title: "Arrival in Gangtok", description: "Transfer from Siliguri/NJP and check-in. Evening at MG Marg." },
+      { day: 2, title: "Local Sightseeing", description: "Visit monasteries, viewpoints, and key city attractions." },
+      { day: 3, title: "Excursion Day", description: "Optional Tsomgo Lake / Baba Mandir excursion subject to permits and weather." },
+      { day: 4, title: "Departure", description: "Return transfer to Siliguri or onward destination." },
     ],
-    included: ["Private pool villa", "Daily breakfast", "Couple spa session", "Private sunset dinner", "All transfers", "Guided Ubud tour"],
-    excluded: ["Flights", "Indonesia visa", "Lunch & dinner (except special dinners)", "Personal shopping", "Travel insurance"],
+    included: ["Transport", "Hotel stay", "Sightseeing coordination", "Permit guidance where applicable"],
+    excluded: ["Permit charges if applicable", "Meals unless mentioned", "Personal expenses", "Pony ride / optional activities"],
     accommodation: {
-      title: "Private Pool Villas",
-      description: "Romantic villas with private pools, outdoor bathtubs, and lush tropical gardens.",
-      hotels: ["Kayumanis Ubud", "The Seminyak Beach Resort", "Alila Ubud"],
+      title: "Gangtok Hotel Stay",
+      description: "Comfortable hotels in Gangtok selected based on budget and availability.",
+      hotels: ["Standard and deluxe partner properties in Gangtok"],
     },
-    gallery: [
-      images.packageGallery.bali1,
-      images.packageGallery.bali2,
-      images.packageGallery.bali3,
-    ],
+    gallery: [images.packageGallery.bali1, images.packageGallery.bali2, images.packages.kerala],
     faqs: [
-      { question: "Is this package only for honeymooners?", answer: "While designed for couples, anniversaries and romantic getaways are equally welcome." },
-      { question: "Can we extend our stay?", answer: "Yes, villa extensions and additional experiences can be arranged at preferential rates." },
+      { question: "Are permits included?", answer: "Permit assistance is included; permit fees may apply separately for certain routes." },
+      { question: "Can Tsomgo Lake be added?", answer: "Yes, it can be included based on season, permit availability, and vehicle type." },
     ],
   },
 };
 
 const defaultDetail: PackageDetail = {
   overview: [
-    "A carefully curated journey designed by our travel experts to deliver an exceptional experience from start to finish.",
-    "Enjoy handpicked accommodations, seamless logistics, and insider access to the best each destination has to offer.",
+    "This package is designed by C Font Travels to offer a comfortable and well-coordinated travel experience with reliable transport and local planning support.",
+    "Ideal for travelers looking for a professionally managed trip with flexible customization options based on route, duration, and budget.",
   ],
   itinerary: [
-    { day: 1, title: "Arrival & Welcome", description: "Airport pickup and hotel check-in. Welcome briefing with your tour coordinator." },
-    { day: 2, title: "Exploration Begins", description: "Guided sightseeing of key attractions with an expert local guide." },
-    { day: 3, title: "Adventure Day", description: "Curated activities and experiences unique to your destination." },
-    { day: 4, title: "Cultural Immersion", description: "Local markets, heritage sites, and authentic culinary experiences." },
-    { day: 5, title: "Departure", description: "Leisurely morning and transfer to the airport." },
+    { day: 1, title: "Arrival & Transfer", description: "Pickup from Siliguri, Bagdogra, or NJP and transfer to the destination." },
+    { day: 2, title: "Sightseeing", description: "Planned local sightseeing and destination exploration." },
+    { day: 3, title: "Excursion / Leisure", description: "Additional sightseeing or leisure time based on itinerary." },
+    { day: 4, title: "Return", description: "Return transfer to Siliguri or onward location." },
   ],
-  included: ["Accommodation as per itinerary", "Daily breakfast", "Airport transfers", "Guided sightseeing", "All applicable taxes"],
-  excluded: ["Flights", "Visa fees", "Personal expenses", "Meals not mentioned", "Travel insurance"],
+  included: ["Transport as per itinerary", "Accommodation where applicable", "Basic sightseeing support", "Trip coordination"],
+  excluded: ["Meals unless specified", "Entry fees", "Personal expenses", "Travel insurance", "Permits if required"],
   accommodation: {
-    title: "Quality Accommodations",
-    description: "Comfortable, well-located properties selected for quality, service, and convenience.",
-    hotels: ["Partner hotels selected based on availability and season"],
+    title: "Partner Accommodations",
+    description: "Hotel arrangements based on package category, route, and availability.",
+    hotels: ["Selected partner hotels based on destination and budget"],
   },
   gallery: [images.packageGallery.default1, images.packageGallery.default2],
   faqs: [
-    { question: "Can I customize this package?", answer: "Yes, all packages can be tailored to your preferences, budget, and travel dates." },
-    { question: "What is the cancellation policy?", answer: "Cancellation terms vary by package. Contact us for detailed policy information." },
+    { question: "Can this package be customized?", answer: "Yes, all packages can be tailored to your travel dates, group size, and preferences." },
+    { question: "Do you provide transport from Siliguri?", answer: "Yes, pickup and drop from Siliguri, Bagdogra, and NJP can be arranged." },
   ],
 };
 

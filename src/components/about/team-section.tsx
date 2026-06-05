@@ -12,8 +12,8 @@ export function TeamSection() {
       <div className="container-wide">
         <SectionHeader
           eyebrow="Our Team"
-          title="Meet the People Behind Your Journeys"
-          description="Passionate travel experts dedicated to making every trip extraordinary — from planning to your safe return home."
+          title="Meet the Team Behind Your Journey"
+          description="Dedicated professionals supporting tour planning, transport coordination, and customer service from our Siliguri office."
         />
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">

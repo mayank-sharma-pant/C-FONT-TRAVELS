@@ -18,8 +18,8 @@ export function Footer() {
                 Start Your Journey Today
               </h3>
               <p className="mt-3 max-w-md text-white/60">
-                Subscribe for exclusive travel deals, destination guides, and
-                insider tips delivered to your inbox.
+                Get updates on tour packages, travel offers, and destination tips
+                from C Font Travels, Siliguri.
               </p>
             </div>
             <form className="flex flex-col gap-3 sm:flex-row" onSubmit={(e) => e.preventDefault()}>
@@ -49,7 +49,7 @@ export function Footer() {
                   C Font Travels
                 </span>
                 <span className="block text-[10px] uppercase tracking-[0.15em] text-white/50">
-                  Premium Journeys
+                  Tour & Travel · Siliguri
                 </span>
               </div>
             </Link>
@@ -114,22 +114,36 @@ export function Footer() {
                 <span>{siteConfig.address}</span>
               </li>
               <li>
-                <a
-                  href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
-                  className="flex items-center gap-3 text-sm text-white/60 transition-colors hover:text-white"
-                >
-                  <Phone className="h-4 w-4 shrink-0 text-gold" />
-                  {siteConfig.phone}
-                </a>
+                {siteConfig.phone === "To Be Updated" ? (
+                  <span className="flex items-center gap-3 text-sm text-white/60">
+                    <Phone className="h-4 w-4 shrink-0 text-gold" />
+                    {siteConfig.phone}
+                  </span>
+                ) : (
+                  <a
+                    href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
+                    className="flex items-center gap-3 text-sm text-white/60 transition-colors hover:text-white"
+                  >
+                    <Phone className="h-4 w-4 shrink-0 text-gold" />
+                    {siteConfig.phone}
+                  </a>
+                )}
               </li>
               <li>
-                <a
-                  href={`mailto:${siteConfig.email}`}
-                  className="flex items-center gap-3 text-sm text-white/60 transition-colors hover:text-white"
-                >
-                  <Mail className="h-4 w-4 shrink-0 text-gold" />
-                  {siteConfig.email}
-                </a>
+                {siteConfig.email === "To Be Updated" ? (
+                  <span className="flex items-center gap-3 text-sm text-white/60">
+                    <Mail className="h-4 w-4 shrink-0 text-gold" />
+                    {siteConfig.email}
+                  </span>
+                ) : (
+                  <a
+                    href={`mailto:${siteConfig.email}`}
+                    className="flex items-center gap-3 text-sm text-white/60 transition-colors hover:text-white"
+                  >
+                    <Mail className="h-4 w-4 shrink-0 text-gold" />
+                    {siteConfig.email}
+                  </a>
+                )}
               </li>
             </ul>
           </div>

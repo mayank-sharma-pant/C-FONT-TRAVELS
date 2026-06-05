@@ -36,16 +36,16 @@ export function HeroSection() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
               <Badge variant="glass" className="mb-6">
-                ✦ Premium Travel Experiences Since 2014
+                ✦ Tour & Travel Services · Siliguri
               </Badge>
               <h1 className="font-display text-4xl font-medium leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
-                Discover the World with{" "}
-                <span className="text-gradient-gold">C Font Travels</span>
+                Your Trusted Travel & Transport Partner in{" "}
+                <span className="text-gradient-gold">North Bengal</span>
               </h1>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
-                From bespoke luxury escapes to adventure-filled group tours — we
-                craft extraordinary journeys tailored to your dreams, with
-                seamless planning and world-class service.
+                C Font Travels provides reliable transport services, customized tour
+                packages, airport transfers, vehicle rentals, and memorable travel
+                experiences across North Bengal, Sikkim, Darjeeling, Bhutan, and beyond.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <Button asChild variant="accent" size="lg">

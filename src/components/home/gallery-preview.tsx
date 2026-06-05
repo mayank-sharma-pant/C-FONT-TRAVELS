@@ -16,8 +16,8 @@ export function GalleryPreview() {
       <div className="container-wide">
         <SectionHeader
           eyebrow="Gallery"
-          title="Moments That Inspire Wanderlust"
-          description="A glimpse into the incredible journeys our travelers have experienced around the world."
+          title="Travel Moments Across North Bengal"
+          description="A glimpse into the journeys, hill views, group trips, and travel experiences we help create across North Bengal and beyond."
           light
         />
 

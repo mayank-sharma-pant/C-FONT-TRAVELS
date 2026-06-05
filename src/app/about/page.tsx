@@ -13,7 +13,7 @@ import { aboutHero } from "@/lib/data/about";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about C Font Travels — our story, mission, values, team, and journey building India's trusted premium travel agency since 2014.",
+    "Learn about C Font Travels — a trusted tour and travel company in Siliguri offering transport services, tour packages, and travel planning across North Bengal, Sikkim, Darjeeling, and Bhutan.",
 };
 
 export default function AboutPage() {

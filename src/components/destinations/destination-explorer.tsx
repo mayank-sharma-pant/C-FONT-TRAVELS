@@ -42,7 +42,7 @@ export function DestinationExplorer() {
         <SectionHeader
           eyebrow="Explore All"
           title="Find Your Perfect Destination"
-          description="Search and filter through our curated collection — from domestic gems to international escapes."
+          description="Search and filter destinations across North Bengal, Sikkim, Darjeeling, Bhutan, and other popular travel locations."
         />
 
         <div className="mb-10 rounded-2xl border border-border/50 bg-white p-4 shadow-sm sm:p-6">

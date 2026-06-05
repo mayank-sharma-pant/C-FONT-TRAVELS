@@ -24,8 +24,8 @@ export function PackagesCta() {
               Need a Custom Itinerary?
             </h2>
             <p className="mt-4 text-base leading-relaxed text-white/75">
-              Don&apos;t see the perfect package? Our travel designers can build a
-              fully bespoke itinerary tailored to your dates, budget, and preferences.
+              Don&apos;t see the exact package you need? We can customize Darjeeling,
+              Sikkim, Bhutan, Dooars, and other routes based on your preferences.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button asChild variant="accent" size="lg">

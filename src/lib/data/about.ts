@@ -3,179 +3,179 @@ import { images } from "@/lib/images";
 export const aboutHero = {
   title: "About C Font Travels",
   description:
-    "A premium travel agency built on passion, expertise, and an unwavering commitment to crafting journeys that inspire, delight, and transform.",
+    "A trusted tour and travel company based in Siliguri, dedicated to providing reliable transportation, customized travel packages, and memorable journeys across North Bengal and beyond.",
   image: images.hero.team,
 };
 
 export const companyStory = {
-  title: "Our Story",
+  title: "Company Overview",
   paragraphs: [
-    "C Font Travels was founded in 2014 with a simple belief: travel should be more than reaching a destination — it should be a transformative experience that stays with you long after you return home.",
-    "What began as a small consultancy in New Delhi has grown into a trusted name serving thousands of travelers across India and beyond. From honeymooners seeking romantic escapes to corporations planning global retreats, we've built our reputation one exceptional journey at a time.",
-    "Today, we offer a flexible suite of travel services — tour packages, flight and hotel booking, visa assistance, corporate travel, and bespoke itinerary planning — all delivered with the same personal touch that defined our earliest days.",
+    "C Font Travels is a professional tour and travel company operating from Salugara, Siliguri, with a strong focus on transport services and customized travel solutions across North Bengal, Sikkim, Darjeeling, Bhutan, and nearby destinations.",
+    "We serve tourists, families, corporate clients, and groups with dependable vehicle arrangements, tour packages, airport and railway transfers, and end-to-end travel planning. Our local knowledge and customer-first approach help us deliver safe, comfortable, and well-coordinated travel experiences.",
+    "Registered under the Siliguri Municipal Corporation, C Font Travels continues to grow as a reliable travel and transport partner for clients seeking quality service, transparent communication, and professional support throughout their journey.",
   ],
   image: images.about.story,
   stats: [
-    { label: "Founded", value: "2014" },
-    { label: "Team Members", value: "45+" },
-    { label: "Office Locations", value: "3" },
+    { label: "Based In", value: "Siliguri" },
+    { label: "Service Area", value: "North Bengal" },
+    { label: "Certificate", value: "SMC" },
   ],
 };
 
 export const mission = {
   title: "Our Mission",
   description:
-    "To make world-class travel accessible and effortless by delivering personalized, end-to-end journey planning that exceeds expectations — every trip, every traveler, every time.",
+    "To provide safe, reliable, and customer-focused travel and transport services by combining local expertise, comfortable vehicles, and professionally planned tour packages for every traveler we serve.",
   icon: "target" as const,
 };
 
 export const vision = {
   title: "Our Vision",
   description:
-    "To become India's most trusted and admired travel brand — recognized globally for innovation, integrity, and the ability to turn travel dreams into lifelong memories.",
+    "To become one of the most trusted tour and transport companies in North Bengal — known for dependable service, strong local destination knowledge, and memorable travel experiences.",
   icon: "eye" as const,
 };
 
 export const coreValues = [
   {
+    title: "Professional Service",
+    description:
+      "Every booking is handled with care, punctuality, and a commitment to quality service.",
+  },
+  {
+    title: "Customer Satisfaction",
+    description:
+      "We prioritize clear communication, comfort, and support before, during, and after every trip.",
+  },
+  {
+    title: "Safe Travel",
+    description:
+      "Safety comes first through dependable vehicles, responsible driving, and careful trip planning.",
+  },
+  {
+    title: "Reliable Transport",
+    description:
+      "From airport pickups to full tour circuits, we deliver transportation you can count on.",
+  },
+  {
+    title: "Local Expertise",
+    description:
+      "Our team understands North Bengal, Sikkim, Darjeeling, and regional travel routes in depth.",
+  },
+  {
     title: "Integrity",
     description:
-      "Transparent pricing, honest recommendations, and ethical practices in every interaction.",
-  },
-  {
-    title: "Excellence",
-    description:
-      "Relentless attention to detail — from itinerary design to on-trip support.",
-  },
-  {
-    title: "Personalization",
-    description:
-      "Every journey is uniquely crafted around your preferences, not a template.",
-  },
-  {
-    title: "Innovation",
-    description:
-      "Embracing new destinations, technologies, and travel trends to serve you better.",
-  },
-  {
-    title: "Passion",
-    description:
-      "We love travel as much as you do — and it shows in everything we create.",
-  },
-  {
-    title: "Reliability",
-    description:
-      "Dependable support before, during, and after your trip — 24/7, without compromise.",
+      "Honest guidance, transparent dealings, and trustworthy service in every interaction.",
   },
 ];
 
 export const whyWeStarted = {
   title: "Why We Started",
   quote:
-    "We saw too many travelers settle for generic packages and impersonal service. We knew there was a better way — travel planned by people who genuinely care about your experience.",
-  author: "Founder's Note",
+    "Travel in this region deserves more than unreliable transport and generic packages. We built C Font Travels to offer professional service, local knowledge, and journeys people can trust.",
+  author: "C Font Travels Team",
   paragraphs: [
-    "Our founders, seasoned travelers themselves, experienced firsthand the frustration of cookie-cutter itineraries and hidden fees. They envisioned an agency that would treat every client like family — listening deeply, planning thoughtfully, and standing by you at every step.",
-    "That vision became C Font Travels: a place where luxury meets authenticity, where adventure meets comfort, and where your travel story is written with care.",
+    "Siliguri is the gateway to some of India's most beautiful hill destinations, yet travelers often struggle to find dependable transport and well-planned tour support. C Font Travels was established to bridge that gap.",
+    "Today, we help clients explore Darjeeling, Gangtok, Sikkim, Bhutan, Dooars, Mirik, and beyond with customized packages, vehicle rentals, and transfer services designed around real travel needs.",
   ],
   image: images.about.founder,
 };
 
 export const achievements = [
   {
-    value: "15,000+",
+    value: "5000+",
     label: "Happy Travelers",
-    description: "Served across domestic and international destinations",
+    description: "Served across North Bengal, Sikkim, and nearby destinations",
   },
   {
-    value: "85+",
+    value: "15+",
     label: "Destinations",
-    description: "Curated experiences across six continents",
+    description: "Covering hill stations, wildlife zones, and custom routes",
   },
   {
-    value: "12+",
+    value: "10+",
     label: "Years",
-    description: "Of trusted travel expertise since 2014",
+    description: "Of professional travel and transport service experience",
   },
   {
-    value: "98%",
+    value: "99%",
     label: "Satisfaction",
-    description: "Client satisfaction rate based on post-trip surveys",
+    description: "Built on reliable service and customer-first support",
   },
   {
-    value: "50+",
-    label: "Partners",
-    description: "Airlines, hotels, and tour operators worldwide",
+    value: "100+",
+    label: "Trips Monthly",
+    description: "Including tours, rentals, and transfer services",
   },
   {
-    value: "3",
-    label: "Offices",
-    description: "Delhi, Mumbai, and Bangalore service centers",
+    value: "1",
+    label: "Head Office",
+    description: "Salugara, Siliguri, West Bengal",
   },
 ];
 
 export const timeline = [
   {
-    year: "2014",
-    title: "The Beginning",
+    year: "Foundation",
+    title: "C Font Travels Begins",
     description:
-      "C Font Travels founded in New Delhi with a focus on personalized domestic tour packages.",
+      "Started as a local travel and transport service provider in Siliguri with a focus on North Bengal tourism.",
   },
   {
-    year: "2016",
-    title: "Going International",
+    year: "Growth",
+    title: "Expanded Tour Services",
     description:
-      "Expanded services to include international tours, flight booking, and visa assistance.",
+      "Introduced customized packages for Darjeeling, Sikkim, Gangtok, Dooars, and regional hill destinations.",
   },
   {
-    year: "2018",
-    title: "Corporate Travel Launch",
+    year: "Transport",
+    title: "Vehicle Rental & Transfers",
     description:
-      "Introduced dedicated corporate travel solutions for businesses across India.",
+      "Added vehicle rental, airport transfer, and railway station transfer services for tourists and local clients.",
   },
   {
-    year: "2020",
-    title: "Digital Transformation",
+    year: "Corporate",
+    title: "Corporate Travel Solutions",
     description:
-      "Launched online inquiry platform and 24/7 virtual support during global travel shifts.",
+      "Began supporting businesses, institutions, and groups with dependable transport and travel coordination.",
   },
   {
-    year: "2022",
-    title: "Multi-City Expansion",
+    year: "Regional",
+    title: "Bhutan & Extended Routes",
     description:
-      "Opened offices in Mumbai and Bangalore; surpassed 10,000 happy travelers milestone.",
+      "Expanded travel planning for Bhutan tours and customized long-route itineraries from Siliguri.",
   },
   {
-    year: "2024",
-    title: "Premium Portfolio",
+    year: "Today",
+    title: "Trusted Local Partner",
     description:
-      "Added luxury tours, pilgrimage packages, adventure expeditions, and custom travel planning.",
+      "Serving as a reliable tour and transport company for families, tourists, corporates, and group travelers.",
   },
 ];
 
 export const teamMembers = [
   {
-    name: "Rajesh Kapoor",
-    role: "Founder & CEO",
-    bio: "20+ years in travel and hospitality. Passionate about crafting bespoke luxury experiences.",
+    name: "Travel Operations Team",
+    role: "Tour Coordination",
+    bio: "Handles itinerary planning, package customization, and on-trip support for Darjeeling, Sikkim, and regional tours.",
     image: images.people.man1,
   },
   {
-    name: "Priya Sharma",
-    role: "Head of Operations",
-    bio: "Expert in logistics and on-ground coordination across 85+ global destinations.",
+    name: "Transport Management Team",
+    role: "Fleet & Transfers",
+    bio: "Manages vehicle arrangements, airport transfers, railway pickups, and rental bookings with professional coordination.",
     image: images.people.woman2,
   },
   {
-    name: "Arjun Mehta",
-    role: "Corporate Travel Director",
-    bio: "Specializes in business travel, MICE events, and enterprise travel management.",
+    name: "Customer Support Team",
+    role: "Client Assistance",
+    bio: "Provides booking support, travel guidance, and responsive assistance for inquiries and trip planning.",
     image: images.people.man2,
   },
   {
-    name: "Anita Desai",
-    role: "Visa & Documentation Lead",
-    bio: "Guides clients through complex visa processes with a 97% first-time approval rate.",
+    name: "Corporate Services Team",
+    role: "Business Travel",
+    bio: "Supports corporate clients, institutions, and group bookings with reliable transport and travel solutions.",
     image: images.people.woman2,
   },
 ];

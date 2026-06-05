@@ -13,8 +13,8 @@ export function FeaturedServices() {
       <div className="container-wide">
         <SectionHeader
           eyebrow="Our Services"
-          title="Everything You Need for the Perfect Trip"
-          description="Flexible travel solutions designed to grow with your needs — from weekend getaways to corporate retreats and everything in between."
+          title="Complete Travel & Transport Solutions"
+          description="From Darjeeling tours and Sikkim packages to airport transfers, vehicle rentals, and corporate travel — all from one trusted Siliguri partner."
         />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

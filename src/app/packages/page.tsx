@@ -8,7 +8,7 @@ import { packagesHero } from "@/lib/data/packages";
 export const metadata: Metadata = {
   title: "Tour Packages",
   description:
-    "Browse C Font Travels tour packages — adventure, family, luxury, honeymoon, and group tours with transparent pricing and curated itineraries.",
+    "Browse C Font Travels tour packages for Darjeeling, Sikkim, Gangtok, Bhutan, Dooars, and more — with reliable transport and local travel expertise from Siliguri.",
 };
 
 export default function PackagesPage() {

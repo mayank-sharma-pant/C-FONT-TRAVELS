@@ -12,8 +12,8 @@ export function FeaturedPackages() {
       <div className="container-wide">
         <SectionHeader
           eyebrow="Featured"
-          title="Traveler Favorites"
-          description="Our most booked packages — tried, tested, and loved by thousands of happy travelers."
+          title="Featured Tour Packages"
+          description="Popular packages for Darjeeling, Sikkim, Bhutan, Dooars, and nearby destinations with reliable travel support."
         />
 
         <div className="grid gap-8 md:grid-cols-2">

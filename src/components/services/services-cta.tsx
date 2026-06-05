@@ -28,8 +28,8 @@ export function ServicesCta() {
               Let Our Experts Guide You
             </h2>
             <p className="mt-4 text-base leading-relaxed text-white/75">
-              Tell us about your travel plans and we&apos;ll recommend the perfect
-              combination of services — no obligation, no pressure.
+              Tell us whether you need a tour package, vehicle rental, airport
+              transfer, or customized travel plan — we&apos;ll guide you to the right service.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button asChild variant="accent" size="lg">
@@ -38,12 +38,19 @@ export function ServicesCta() {
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild variant="glass" size="lg">
-                <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}>
+              {siteConfig.phone === "To Be Updated" ? (
+                <Button variant="glass" size="lg" disabled>
                   <Phone className="h-4 w-4" />
                   {siteConfig.phone}
-                </a>
-              </Button>
+                </Button>
+              ) : (
+                <Button asChild variant="glass" size="lg">
+                  <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}>
+                    <Phone className="h-4 w-4" />
+                    {siteConfig.phone}
+                  </a>
+                </Button>
+              )}
             </div>
           </div>
         </motion.div>

@@ -15,8 +15,8 @@ export function FeaturedDestinations() {
       <div className="container-wide">
         <SectionHeader
           eyebrow="Destinations"
-          title="Explore Extraordinary Places"
-          description="Handpicked destinations that promise unforgettable experiences — from tropical paradises to cultural capitals."
+          title="Popular Destinations We Serve"
+          description="Explore Darjeeling, Gangtok, Sikkim, Bhutan, Dooars, and more with local expertise and dependable travel support."
         />
 
         <div className="grid gap-6 md:grid-cols-2">

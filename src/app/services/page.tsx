@@ -10,7 +10,7 @@ import { SectionHeader } from "@/components/shared/section-header";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore C Font Travels services — tour packages, flight booking, hotel reservations, visa assistance, corporate travel, group tours, honeymoon packages, and custom travel planning.",
+    "Explore C Font Travels services — tour packages, transport services, vehicle rentals, airport transfers, railway transfers, corporate travel, and customized travel planning in Siliguri.",
 };
 
 export default function ServicesPage() {
