@@ -1,0 +1,122 @@
+{
+  "darjeeling-tea-hills-tour": {
+    "overview": [
+      "Experience the charm of Darjeeling with this compact hill tour covering sunrise views, tea gardens, local markets, and iconic sightseeing points.",
+      "Ideal for families, couples, and first-time visitors looking for a comfortable trip from Siliguri with reliable transport and local planning support."
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Siliguri to Darjeeling",
+        "description": "Depart from Siliguri and arrive in Darjeeling. Evening leisure at Mall Road."
+      },
+      {
+        "day": 2,
+        "title": "Darjeeling Sightseeing",
+        "description": "Early morning Tiger Hill visit, Batasia Loop, Ghoom Monastery, and tea garden stop."
+      },
+      {
+        "day": 3,
+        "title": "Return Journey",
+        "description": "Morning leisure and return transfer to Siliguri."
+      }
+    ],
+    "included": [
+      "Transport from Siliguri",
+      "Hotel accommodation",
+      "Basic sightseeing",
+      "Driver assistance",
+      "Trip coordination"
+    ],
+    "excluded": [
+      "Personal expenses",
+      "Entry tickets not mentioned",
+      "Meals unless specified",
+      "Travel insurance"
+    ],
+    "accommodation": {
+      "title": "Comfortable Hill Stay",
+      "description": "Standard to deluxe hotel options in Darjeeling based on package selection and availability.",
+      "hotels": [
+        "Partner hotels in Darjeeling town and nearby areas"
+      ]
+    },
+    "gallery": [
+      "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=75",
+      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=75",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=640&q=75"
+    ],
+    "faqs": [
+      {
+        "question": "Can this package start from Bagdogra Airport?",
+        "answer": "Yes, airport pickup can be arranged on request with adjusted pricing."
+      },
+      {
+        "question": "Is the package customizable?",
+        "answer": "Yes, duration, hotel category, and sightseeing can be customized."
+      }
+    ]
+  },
+  "gangtok-sikkim-explorer": {
+    "overview": [
+      "Discover Gangtok and nearby Sikkim highlights with a well-paced itinerary designed for comfortable travel and scenic experiences.",
+      "Perfect for families and groups wanting a guided introduction to Sikkim's capital and surrounding attractions."
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Gangtok",
+        "description": "Transfer from Siliguri/NJP and check-in. Evening at MG Marg."
+      },
+      {
+        "day": 2,
+        "title": "Local Sightseeing",
+        "description": "Visit monasteries, viewpoints, and key city attractions."
+      },
+      {
+        "day": 3,
+        "title": "Excursion Day",
+        "description": "Optional Tsomgo Lake / Baba Mandir excursion subject to permits and weather."
+      },
+      {
+        "day": 4,
+        "title": "Departure",
+        "description": "Return transfer to Siliguri or onward destination."
+      }
+    ],
+    "included": [
+      "Transport",
+      "Hotel stay",
+      "Sightseeing coordination",
+      "Permit guidance where applicable"
+    ],
+    "excluded": [
+      "Permit charges if applicable",
+      "Meals unless mentioned",
+      "Personal expenses",
+      "Pony ride / optional activities"
+    ],
+    "accommodation": {
+      "title": "Gangtok Hotel Stay",
+      "description": "Comfortable hotels in Gangtok selected based on budget and availability.",
+      "hotels": [
+        "Standard and deluxe partner properties in Gangtok"
+      ]
+    },
+    "gallery": [
+      "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=75",
+      "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=75",
+      "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=640&q=75"
+    ],
+    "faqs": [
+      {
+        "question": "Are permits included?",
+        "answer": "Permit assistance is included; permit fees may apply separately for certain routes."
+      },
+      {
+        "question": "Can Tsomgo Lake be added?",
+        "answer": "Yes, it can be included based on season, permit availability, and vehicle type."
+      }
+    ]
+  }
+}

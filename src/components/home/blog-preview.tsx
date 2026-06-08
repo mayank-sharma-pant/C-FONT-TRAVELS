@@ -1,14 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Clock } from "lucide-react";
-import { blogPosts } from "@/lib/data/content";
+import type { BlogPost } from "@/lib/data/blog";
 import { SectionHeader } from "@/components/shared/section-header";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-export function BlogPreview() {
-  const featured = blogPosts.find((p) => p.featured)!;
-  const recent = blogPosts.filter((p) => !p.featured).slice(0, 2);
+interface BlogPreviewProps {
+  posts: BlogPost[];
+}
+
+export function BlogPreview({ posts }: BlogPreviewProps) {
+  const featured = posts.find((p) => p.featured)!;
+  const recent = posts.filter((p) => !p.featured).slice(0, 2);
 
   return (
     <section className="section-padding bg-cream">

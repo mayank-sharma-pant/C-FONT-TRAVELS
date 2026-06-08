@@ -227,3 +227,5 @@ const blogDetails: Record<string, BlogDetail> = {
 export function getBlogDetail(slug: string): BlogDetail {
   return blogDetails[slug] ?? defaultDetail;
 }
+
+export const blogDetailsSeed = blogDetails;

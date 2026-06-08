@@ -5,7 +5,6 @@ import Image from "next/image";
 import { ArrowRight, Check, Clock } from "lucide-react";
 import type { BlogPost } from "@/lib/data/blog";
 import type { BlogDetail } from "@/lib/data/blog-details";
-import { getRelatedPosts } from "@/lib/data/blog";
 import { SectionHeader } from "@/components/shared/section-header";
 import { BlogCard } from "@/components/blog/blog-card";
 import { Button } from "@/components/ui/button";
@@ -14,10 +13,11 @@ import { Badge } from "@/components/ui/badge";
 interface BlogDetailViewProps {
   post: BlogPost;
   detail: BlogDetail;
+  relatedPosts: BlogPost[];
 }
 
-export function BlogDetailView({ post, detail }: BlogDetailViewProps) {
-  const related = getRelatedPosts(post.slug, post.category);
+export function BlogDetailView({ post, detail, relatedPosts }: BlogDetailViewProps) {
+  const related = relatedPosts;
 
   return (
     <>

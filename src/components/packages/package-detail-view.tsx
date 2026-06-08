@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import type { TourPackage } from "@/lib/data/packages";
 import type { PackageDetail } from "@/lib/data/package-details";
-import { categoryLabels, getRelatedPackages } from "@/lib/data/packages";
+import { categoryLabels } from "@/lib/data/packages";
 import { SectionHeader } from "@/components/shared/section-header";
 import { PackageCard } from "@/components/packages/package-card";
 import { Button } from "@/components/ui/button";
@@ -27,10 +27,11 @@ import { cn } from "@/lib/utils";
 interface PackageDetailViewProps {
   pkg: TourPackage;
   detail: PackageDetail;
+  relatedPackages: TourPackage[];
 }
 
-export function PackageDetailView({ pkg, detail }: PackageDetailViewProps) {
-  const related = getRelatedPackages(pkg.slug, pkg.category);
+export function PackageDetailView({ pkg, detail, relatedPackages }: PackageDetailViewProps) {
+  const related = relatedPackages;
 
   return (
     <>

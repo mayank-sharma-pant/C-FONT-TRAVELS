@@ -1,0 +1,176 @@
+[
+  {
+    "slug": "darjeeling-tea-hills-tour",
+    "name": "Darjeeling Tea Hills Tour",
+    "location": "Darjeeling, West Bengal",
+    "duration": "3 Days / 2 Nights",
+    "price": 6999,
+    "priceDisplay": "₹6,999",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=640&q=75",
+    "category": "family",
+    "highlights": [
+      "Tiger Hill",
+      "Batasia Loop",
+      "Tea Gardens",
+      "Mall Road"
+    ],
+    "description": "A classic Darjeeling getaway covering sunrise views, local sightseeing, tea estates, and comfortable travel from Siliguri.",
+    "featured": true
+  },
+  {
+    "slug": "gangtok-sikkim-explorer",
+    "name": "Gangtok & Sikkim Explorer",
+    "location": "Gangtok, Sikkim",
+    "duration": "4 Days / 3 Nights",
+    "price": 8499,
+    "priceDisplay": "₹8,499",
+    "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=640&q=75",
+    "category": "family",
+    "highlights": [
+      "MG Marg",
+      "Monasteries",
+      "Tsomgo Lake",
+      "Local Sightseeing"
+    ],
+    "description": "Explore Gangtok and nearby Sikkim attractions with planned sightseeing, transport, and flexible customization options.",
+    "featured": true
+  },
+  {
+    "slug": "bhutan-gateway-package",
+    "name": "Bhutan Gateway Package",
+    "location": "Bhutan",
+    "duration": "5 Days / 4 Nights",
+    "price": 18999,
+    "priceDisplay": "₹18,999",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=640&q=75",
+    "category": "adventure",
+    "highlights": [
+      "Thimphu",
+      "Paro",
+      "Dzongs",
+      "Scenic Valleys"
+    ],
+    "description": "A curated Bhutan tour package with cultural sightseeing, mountain landscapes, and coordinated travel arrangements.",
+    "featured": true
+  },
+  {
+    "slug": "dooars-wildlife-safari",
+    "name": "Dooars Wildlife Safari",
+    "location": "Dooars, West Bengal",
+    "duration": "3 Days / 2 Nights",
+    "price": 7499,
+    "priceDisplay": "₹7,499",
+    "image": "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=640&q=75",
+    "category": "adventure",
+    "highlights": [
+      "Wildlife Zones",
+      "Forest Drives",
+      "River Views",
+      "Nature Trails"
+    ],
+    "description": "Experience the natural beauty and wildlife of Dooars with a compact, adventure-focused tour package.",
+    "featured": true
+  },
+  {
+    "slug": "kalimpong-heritage-tour",
+    "name": "Kalimpong Heritage Tour",
+    "location": "Kalimpong, West Bengal",
+    "duration": "2 Days / 1 Night",
+    "price": 5499,
+    "priceDisplay": "₹5,499",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=640&q=75",
+    "category": "family",
+    "highlights": [
+      "Deolo Hill",
+      "Monasteries",
+      "Flower Nurseries",
+      "Viewpoints"
+    ],
+    "description": "A short and refreshing Kalimpong tour ideal for weekend travelers and peaceful hill getaways."
+  },
+  {
+    "slug": "mirik-lake-retreat",
+    "name": "Mirik Lake Retreat",
+    "location": "Mirik, West Bengal",
+    "duration": "2 Days / 1 Night",
+    "price": 4999,
+    "priceDisplay": "₹4,999",
+    "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=640&q=75",
+    "category": "honeymoon",
+    "highlights": [
+      "Sumendu Lake",
+      "Boating",
+      "Tea Gardens",
+      "Scenic Walks"
+    ],
+    "description": "A relaxing Mirik package perfect for couples, families, and short leisure trips in the hills."
+  },
+  {
+    "slug": "north-bengal-circuit",
+    "name": "North Bengal Circuit",
+    "location": "North Bengal",
+    "duration": "5 Days / 4 Nights",
+    "price": 8999,
+    "priceDisplay": "₹8,999",
+    "image": "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=640&q=75",
+    "category": "group",
+    "highlights": [
+      "Multi-Stop Route",
+      "Hill Views",
+      "Local Culture",
+      "Flexible Stops"
+    ],
+    "description": "A flexible North Bengal tour covering multiple destinations with transport and sightseeing support."
+  },
+  {
+    "slug": "goa-beach-getaway",
+    "name": "Goa Beach Getaway",
+    "location": "Goa, India",
+    "duration": "4 Days / 3 Nights",
+    "price": 12999,
+    "priceDisplay": "₹12,999",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=640&q=75",
+    "category": "family",
+    "highlights": [
+      "Beach Visits",
+      "Leisure Time",
+      "Local Sightseeing",
+      "Group Friendly"
+    ],
+    "description": "A refreshing Goa holiday package for families and groups seeking a beachside break."
+  },
+  {
+    "slug": "kashmir-valley-tour",
+    "name": "Kashmir Valley Tour",
+    "location": "Kashmir, India",
+    "duration": "5 Days / 4 Nights",
+    "price": 18999,
+    "priceDisplay": "₹18,999",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=640&q=75",
+    "category": "luxury",
+    "highlights": [
+      "Srinagar",
+      "Gardens",
+      "Scenic Valleys",
+      "Leisure Stays"
+    ],
+    "description": "Discover the beauty of Kashmir with a well-planned valley tour for families and holiday travelers."
+  },
+  {
+    "slug": "dubai-city-escape",
+    "name": "Dubai City Escape",
+    "location": "Dubai, UAE",
+    "duration": "5 Days / 4 Nights",
+    "price": 45999,
+    "priceDisplay": "₹45,999",
+    "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=640&q=75",
+    "category": "luxury",
+    "highlights": [
+      "City Tour",
+      "Desert Safari",
+      "Shopping",
+      "Modern Landmarks"
+    ],
+    "description": "An international Dubai holiday package with city experiences, leisure time, and premium travel planning support."
+  }
+]

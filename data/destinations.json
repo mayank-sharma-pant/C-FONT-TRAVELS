@@ -1,0 +1,178 @@
+[
+  {
+    "slug": "darjeeling",
+    "name": "Darjeeling",
+    "description": "The Queen of Hills — famous for tea gardens, Tiger Hill sunrise, toy train rides, and panoramic Kanchenjunga views.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=640&q=75",
+    "price": "₹6,999",
+    "duration": "3 Days / 2 Nights",
+    "region": "West Bengal",
+    "categories": [
+      "domestic",
+      "mountains",
+      "adventure"
+    ],
+    "popular": true,
+    "trending": true
+  },
+  {
+    "slug": "gangtok",
+    "name": "Gangtok",
+    "description": "Sikkim's vibrant capital with monasteries, mountain views, local culture, and access to scenic nearby attractions.",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=640&q=75",
+    "price": "₹8,499",
+    "duration": "4 Days / 3 Nights",
+    "region": "Sikkim",
+    "categories": [
+      "domestic",
+      "mountains",
+      "city"
+    ],
+    "popular": true,
+    "trending": true
+  },
+  {
+    "slug": "sikkim",
+    "name": "Sikkim",
+    "description": "A breathtaking Himalayan destination with lakes, monasteries, valleys, adventure spots, and peaceful mountain landscapes.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=640&q=75",
+    "price": "₹9,999",
+    "duration": "5 Days / 4 Nights",
+    "region": "Sikkim",
+    "categories": [
+      "domestic",
+      "mountains",
+      "adventure"
+    ],
+    "popular": true,
+    "trending": true
+  },
+  {
+    "slug": "bhutan",
+    "name": "Bhutan",
+    "description": "Discover the Land of Happiness with dzongs, mountain scenery, cultural heritage, and serene Himalayan charm.",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=640&q=75",
+    "price": "₹18,999",
+    "duration": "5 Days / 4 Nights",
+    "region": "Bhutan",
+    "categories": [
+      "international",
+      "mountains",
+      "adventure"
+    ],
+    "popular": true,
+    "trending": true
+  },
+  {
+    "slug": "kalimpong",
+    "name": "Kalimpong",
+    "description": "A peaceful hill town known for monasteries, flower nurseries, viewpoints, and relaxed mountain getaways.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=640&q=75",
+    "price": "₹5,499",
+    "duration": "2 Days / 1 Night",
+    "region": "West Bengal",
+    "categories": [
+      "domestic",
+      "mountains"
+    ],
+    "trending": true
+  },
+  {
+    "slug": "dooars",
+    "name": "Dooars",
+    "description": "Wildlife, tea gardens, river valleys, and forest adventures in one of North Bengal's most nature-rich regions.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=640&q=75",
+    "price": "₹7,499",
+    "duration": "3 Days / 2 Nights",
+    "region": "West Bengal",
+    "categories": [
+      "domestic",
+      "adventure"
+    ],
+    "trending": true
+  },
+  {
+    "slug": "mirik",
+    "name": "Mirik",
+    "description": "A charming hill destination centered around Sumendu Lake, tea estates, boating, and quiet scenic beauty.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=640&q=75",
+    "price": "₹4,999",
+    "duration": "2 Days / 1 Night",
+    "region": "West Bengal",
+    "categories": [
+      "domestic",
+      "mountains"
+    ],
+    "trending": true
+  },
+  {
+    "slug": "north-bengal",
+    "name": "North Bengal",
+    "description": "Explore the diverse beauty of North Bengal with hill towns, forests, tea gardens, and cultural experiences.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=640&q=75",
+    "price": "₹8,999",
+    "duration": "5 Days / 4 Nights",
+    "region": "West Bengal",
+    "categories": [
+      "domestic",
+      "adventure",
+      "mountains"
+    ],
+    "trending": true
+  },
+  {
+    "slug": "goa",
+    "name": "Goa",
+    "description": "Sun, sand, beaches, and leisure travel for families and groups looking for a refreshing holiday escape.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=640&q=75",
+    "price": "₹12,999",
+    "duration": "4 Days / 3 Nights",
+    "region": "India",
+    "categories": [
+      "domestic",
+      "beach"
+    ]
+  },
+  {
+    "slug": "kashmir",
+    "name": "Kashmir",
+    "description": "Snowy peaks, serene lakes, houseboats, and unforgettable landscapes in India's paradise destination.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=640&q=75",
+    "price": "₹18,999",
+    "duration": "5 Days / 4 Nights",
+    "region": "India",
+    "categories": [
+      "domestic",
+      "mountains",
+      "luxury"
+    ]
+  },
+  {
+    "slug": "dubai",
+    "name": "Dubai",
+    "description": "Modern city experiences, desert safaris, luxury shopping, and iconic landmarks in the UAE.",
+    "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=640&q=75",
+    "price": "₹45,999",
+    "duration": "5 Days / 4 Nights",
+    "region": "UAE",
+    "categories": [
+      "international",
+      "city",
+      "luxury"
+    ]
+  },
+  {
+    "slug": "thailand",
+    "name": "Thailand",
+    "description": "A popular international getaway with beaches, temples, vibrant cities, and memorable holiday experiences.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=640&q=75",
+    "price": "₹38,999",
+    "duration": "5 Days / 4 Nights",
+    "region": "Thailand",
+    "categories": [
+      "international",
+      "beach",
+      "city"
+    ]
+  }
+]

@@ -1,11 +1,15 @@
 "use client";
 
-import { tourPackages } from "@/lib/data/packages";
+import type { TourPackage } from "@/lib/data/packages";
 import { SectionHeader } from "@/components/shared/section-header";
 import { PackageCard } from "@/components/packages/package-card";
 
-export function FeaturedPackages() {
-  const featured = tourPackages.filter((pkg) => pkg.featured);
+interface FeaturedPackagesProps {
+  packages: TourPackage[];
+}
+
+export function FeaturedPackages({ packages }: FeaturedPackagesProps) {
+  const featured = packages.filter((pkg) => pkg.featured);
 
   return (
     <section className="section-padding bg-white">

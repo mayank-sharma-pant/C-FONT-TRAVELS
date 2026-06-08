@@ -3,16 +3,18 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
+import type { GalleryImage, GalleryCategory } from "@/lib/data/gallery";
 import {
   galleryCategories,
-  galleryImages,
-  type GalleryCategory,
-  type GalleryImage,
 } from "@/lib/data/gallery";
 import { SectionHeader } from "@/components/shared/section-header";
 import { cn } from "@/lib/utils";
 
-export function GalleryGrid() {
+interface GalleryGridProps {
+  images: GalleryImage[];
+}
+
+export function GalleryGrid({ images: galleryImages }: GalleryGridProps) {
   const [activeCategory, setActiveCategory] = useState<GalleryCategory>("all");
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
 

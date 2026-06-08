@@ -1,12 +1,16 @@
 "use client";
 
 import { TrendingUp } from "lucide-react";
-import { trendingDestinations } from "@/lib/data/destinations";
+import type { Destination } from "@/lib/data/destinations";
 import { SectionHeader } from "@/components/shared/section-header";
 import { DestinationCard } from "@/components/destinations/destination-card";
 import { Badge } from "@/components/ui/badge";
 
-export function TrendingDestinations() {
+interface TrendingDestinationsProps {
+  destinations: Destination[];
+}
+
+export function TrendingDestinations({ destinations }: TrendingDestinationsProps) {
   return (
     <section className="section-padding bg-cream overflow-hidden">
       <div className="container-wide">
@@ -25,7 +29,7 @@ export function TrendingDestinations() {
           </div>
 
           <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory">
-            {trendingDestinations.map((destination) => (
+            {destinations.map((destination) => (
               <div key={destination.slug} className="snap-start">
                 <DestinationCard
                   destination={destination}

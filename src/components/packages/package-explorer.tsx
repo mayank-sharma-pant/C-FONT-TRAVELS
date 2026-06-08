@@ -2,19 +2,21 @@
 
 import { useMemo, useState } from "react";
 import { ArrowUpDown, Search, X } from "lucide-react";
+import type { TourPackage, PackageCategory, PackageSortOption } from "@/lib/data/packages";
 import {
-  tourPackages,
   packageCategories,
   sortOptions,
-  type PackageCategory,
-  type PackageSortOption,
 } from "@/lib/data/packages";
 import { SectionHeader } from "@/components/shared/section-header";
 import { PackageCard } from "@/components/packages/package-card";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 
-export function PackageExplorer() {
+interface PackageExplorerProps {
+  packages: TourPackage[];
+}
+
+export function PackageExplorer({ packages }: PackageExplorerProps) {
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState<
     PackageCategory | "all"
@@ -24,7 +26,7 @@ export function PackageExplorer() {
   const filtered = useMemo(() => {
     const query = search.trim().toLowerCase();
 
-    let results = tourPackages.filter((pkg) => {
+    let results = packages.filter((pkg) => {
       const matchesCategory =
         activeCategory === "all" || pkg.category === activeCategory;
 
@@ -57,7 +59,7 @@ export function PackageExplorer() {
     }
 
     return results;
-  }, [search, activeCategory, sortBy]);
+  }, [search, activeCategory, sortBy, packages]);
 
   return (
     <section id="all-packages" className="section-padding bg-sand/40 scroll-mt-24">

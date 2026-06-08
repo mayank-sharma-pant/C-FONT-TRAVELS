@@ -1,12 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import { galleryImages } from "@/lib/data/content";
+import type { GalleryImage } from "@/lib/data/gallery";
 import { SectionHeader } from "@/components/shared/section-header";
 import { Button } from "@/components/ui/button";
 
-export function GalleryPreview() {
-  const previewImages = galleryImages.slice(0, 6);
+interface GalleryPreviewProps {
+  images: GalleryImage[];
+}
+
+export function GalleryPreview({ images }: GalleryPreviewProps) {
+  const previewImages = images.slice(0, 6);
 
   return (
     <section className="section-padding bg-navy">

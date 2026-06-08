@@ -1,10 +1,14 @@
 "use client";
 
-import { featuredDestinations } from "@/lib/data/destinations";
+import type { Destination } from "@/lib/data/destinations";
 import { SectionHeader } from "@/components/shared/section-header";
 import { DestinationCard } from "@/components/destinations/destination-card";
 
-export function PopularDestinations() {
+interface PopularDestinationsProps {
+  destinations: Destination[];
+}
+
+export function PopularDestinations({ destinations }: PopularDestinationsProps) {
   return (
     <section className="section-padding bg-white">
       <div className="container-wide">
@@ -15,7 +19,7 @@ export function PopularDestinations() {
         />
 
         <div className="grid gap-6 md:grid-cols-2">
-          {featuredDestinations.map((destination) => (
+          {destinations.map((destination) => (
             <DestinationCard
               key={destination.slug}
               destination={destination}

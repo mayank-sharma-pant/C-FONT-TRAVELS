@@ -1,12 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Clock } from "lucide-react";
-import { blogPosts } from "@/lib/data/blog";
+import type { BlogPost } from "@/lib/data/blog";
 import { SectionHeader } from "@/components/shared/section-header";
 import { Badge } from "@/components/ui/badge";
 
-export function FeaturedBlog() {
-  const featured = blogPosts.find((post) => post.featured);
+interface FeaturedBlogProps {
+  posts: BlogPost[];
+}
+
+export function FeaturedBlog({ posts }: FeaturedBlogProps) {
+  const featured = posts.find((post) => post.featured);
 
   if (!featured) return null;
 

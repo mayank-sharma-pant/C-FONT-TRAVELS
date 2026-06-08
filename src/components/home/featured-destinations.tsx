@@ -1,12 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Clock } from "lucide-react";
-import { featuredDestinations } from "@/lib/data/destinations";
+import type { Destination } from "@/lib/data/destinations";
 import { SectionHeader } from "@/components/shared/section-header";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-export function FeaturedDestinations() {
+interface FeaturedDestinationsProps {
+  destinations: Destination[];
+}
+
+export function FeaturedDestinations({ destinations }: FeaturedDestinationsProps) {
   return (
     <section className="section-padding bg-white">
       <div className="container-wide">
@@ -17,7 +21,7 @@ export function FeaturedDestinations() {
         />
 
         <div className="grid gap-6 md:grid-cols-2">
-          {featuredDestinations.map((destination) => (
+          {destinations.map((destination) => (
             <article
               key={destination.slug}
               className="group relative overflow-hidden rounded-3xl"

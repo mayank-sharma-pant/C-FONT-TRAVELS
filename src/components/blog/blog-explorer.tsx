@@ -2,17 +2,20 @@
 
 import { useMemo, useState } from "react";
 import { Search, X } from "lucide-react";
+import type { BlogPost, BlogCategory } from "@/lib/data/blog";
 import {
   blogCategories,
-  blogPosts,
-  type BlogCategory,
 } from "@/lib/data/blog";
 import { SectionHeader } from "@/components/shared/section-header";
 import { BlogCard } from "@/components/blog/blog-card";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 
-export function BlogExplorer() {
+interface BlogExplorerProps {
+  posts: BlogPost[];
+}
+
+export function BlogExplorer({ posts }: BlogExplorerProps) {
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState<BlogCategory | "all">(
     "all"
@@ -21,7 +24,7 @@ export function BlogExplorer() {
   const filtered = useMemo(() => {
     const query = search.trim().toLowerCase();
 
-    return blogPosts.filter((post) => {
+    return posts.filter((post) => {
       const matchesCategory =
         activeCategory === "all" || post.category === activeCategory;
 
@@ -34,7 +37,7 @@ export function BlogExplorer() {
 
       return matchesCategory && matchesSearch;
     });
-  }, [search, activeCategory]);
+  }, [search, activeCategory, posts]);
 
   return (
     <section id="all-articles" className="section-padding bg-sand/40 scroll-mt-24">

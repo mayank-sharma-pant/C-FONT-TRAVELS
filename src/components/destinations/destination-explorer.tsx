@@ -2,17 +2,18 @@
 
 import { useMemo, useState } from "react";
 import { Search, SlidersHorizontal, X } from "lucide-react";
-import {
-  allDestinations,
-  destinationCategories,
-  type DestinationCategory,
-} from "@/lib/data/destinations";
+import type { Destination, DestinationCategory } from "@/lib/data/destinations";
+import { destinationCategories } from "@/lib/data/destinations";
 import { SectionHeader } from "@/components/shared/section-header";
 import { DestinationCard } from "@/components/destinations/destination-card";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 
-export function DestinationExplorer() {
+interface DestinationExplorerProps {
+  destinations: Destination[];
+}
+
+export function DestinationExplorer({ destinations }: DestinationExplorerProps) {
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState<
     DestinationCategory | "all"
@@ -21,7 +22,7 @@ export function DestinationExplorer() {
   const filtered = useMemo(() => {
     const query = search.trim().toLowerCase();
 
-    return allDestinations.filter((destination) => {
+    return destinations.filter((destination) => {
       const matchesCategory =
         activeCategory === "all" ||
         destination.categories.includes(activeCategory);
@@ -34,7 +35,7 @@ export function DestinationExplorer() {
 
       return matchesCategory && matchesSearch;
     });
-  }, [search, activeCategory]);
+  }, [search, activeCategory, destinations]);
 
   return (
     <section id="explore" className="section-padding bg-sand/40 scroll-mt-24">

@@ -1,15 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Check, Clock, MapPin } from "lucide-react";
-import { tourPackages, categoryLabels } from "@/lib/data/packages";
+import type { TourPackage } from "@/lib/data/packages";
+import { categoryLabels } from "@/lib/data/packages";
 import { SectionHeader } from "@/components/shared/section-header";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
-const featuredPackages = tourPackages.slice(0, 4);
+interface PopularPackagesProps {
+  packages: TourPackage[];
+}
 
-export function PopularPackages() {
+export function PopularPackages({ packages }: PopularPackagesProps) {
+  const featuredPackages = packages.slice(0, 4);
+
   return (
     <section className="section-padding bg-sand/50">
       <div className="container-wide">
