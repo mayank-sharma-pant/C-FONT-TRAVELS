@@ -39,6 +39,10 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     type: "website",
   },
+  icons: {
+    icon: "/icon",
+    apple: "/apple-icon",
+  },
 };
 
 export default function RootLayout({

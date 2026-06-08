@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { verifySessionToken, COOKIE_NAME } from "@/lib/admin/auth";
+import { COOKIE_NAME, verifySessionToken } from "@/lib/admin/token";
 
-export function middleware(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const session = request.cookies.get(COOKIE_NAME)?.value;
-  const isAuthed = verifySessionToken(session);
+  const isAuthed = await verifySessionToken(session);
 
   if (pathname.startsWith("/admin") && pathname !== "/admin/login") {
     if (!isAuthed) {

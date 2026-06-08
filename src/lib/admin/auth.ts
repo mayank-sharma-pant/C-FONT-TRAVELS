@@ -1,44 +1,13 @@
 import { cookies } from "next/headers";
-import crypto from "crypto";
-
-const COOKIE_NAME = "admin_session";
-const SESSION_DAYS = 7;
-
-function getSecret() {
-  return process.env.ADMIN_SECRET || "c-font-travels-dev-secret-change-me";
-}
+import {
+  COOKIE_NAME,
+  SESSION_DAYS,
+  createSessionToken,
+  verifySessionToken,
+} from "@/lib/admin/token";
 
 function getPassword() {
   return process.env.ADMIN_PASSWORD || "admin123";
-}
-
-function sign(data: string) {
-  return crypto.createHmac("sha256", getSecret()).update(data).digest("base64url");
-}
-
-export function createSessionToken() {
-  const payload = {
-    exp: Date.now() + SESSION_DAYS * 24 * 60 * 60 * 1000,
-  };
-  const data = Buffer.from(JSON.stringify(payload)).toString("base64url");
-  return `${data}.${sign(data)}`;
-}
-
-export function verifySessionToken(token: string | undefined | null) {
-  if (!token) return false;
-
-  const [data, signature] = token.split(".");
-  if (!data || !signature) return false;
-  if (signature !== sign(data)) return false;
-
-  try {
-    const payload = JSON.parse(Buffer.from(data, "base64url").toString()) as {
-      exp: number;
-    };
-    return payload.exp > Date.now();
-  } catch {
-    return false;
-  }
 }
 
 export function verifyAdminPassword(password: string) {
@@ -47,7 +16,7 @@ export function verifyAdminPassword(password: string) {
 
 export async function setAdminSession() {
   const cookieStore = await cookies();
-  cookieStore.set(COOKIE_NAME, createSessionToken(), {
+  cookieStore.set(COOKIE_NAME, await createSessionToken(), {
     httpOnly: true,
     sameSite: "lax",
     secure: process.env.NODE_ENV === "production",
@@ -73,4 +42,4 @@ export async function requireAdmin() {
   }
 }
 
-export { COOKIE_NAME };
+export { COOKIE_NAME, createSessionToken, verifySessionToken };
