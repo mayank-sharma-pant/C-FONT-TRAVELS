@@ -19,9 +19,10 @@ export function PopularPackages({ packages }: PopularPackagesProps) {
     <section className="section-padding bg-sand/50">
       <div className="container-wide">
         <SectionHeader
+          variant="split"
           eyebrow="Tour Packages"
-          title="Popular Tour Packages"
-          description="Handpicked packages for Darjeeling, Sikkim, Bhutan, Dooars, and more — with transparent pricing and reliable travel support."
+          title="Fixed routes, clear pricing"
+          description="Darjeeling, Sikkim, Bhutan, and Dooars packages with duration, highlights, and starting prices — ask us to customize any itinerary."
         />
 
         <div className="grid gap-8 md:grid-cols-2">

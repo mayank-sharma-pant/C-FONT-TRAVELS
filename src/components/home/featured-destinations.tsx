@@ -15,9 +15,10 @@ export function FeaturedDestinations({ destinations }: FeaturedDestinationsProps
     <section className="section-padding bg-white">
       <div className="container-wide">
         <SectionHeader
+          variant="editorial"
           eyebrow="Destinations"
-          title="Popular Destinations We Serve"
-          description="Explore Darjeeling, Gangtok, Sikkim, Bhutan, Dooars, and more with local expertise and dependable travel support."
+          title="Where we take travelers from Siliguri"
+          description="Hill towns, wildlife circuits, and cross-border routes — planned with local drivers and realistic road timings."
         />
 
         <div className="grid gap-6 md:grid-cols-2">

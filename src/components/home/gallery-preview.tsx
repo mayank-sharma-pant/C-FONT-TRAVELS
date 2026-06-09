@@ -16,9 +16,10 @@ export function GalleryPreview({ images }: GalleryPreviewProps) {
     <section className="section-padding bg-navy">
       <div className="container-wide">
         <SectionHeader
+          variant="split"
           eyebrow="Gallery"
-          title="Travel Moments Across North Bengal"
-          description="A glimpse into the journeys, hill views, group trips, and travel experiences we help create across North Bengal and beyond."
+          title="Journeys across the region"
+          description="Hill views, group trips, and road travel moments from tours and transfers we arrange around North Bengal."
           light
         />
 

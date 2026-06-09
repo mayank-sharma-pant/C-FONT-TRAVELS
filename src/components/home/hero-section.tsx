@@ -1,140 +1,153 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Calendar, MapPin, Search, Users } from "lucide-react";
-import { heroStats } from "@/lib/data/home";
+import {
+  ArrowRight,
+  Clock,
+  MapPin,
+  Phone,
+  ShieldCheck,
+} from "lucide-react";
+import { heroTrustSignals } from "@/lib/data/home";
+import { siteConfig } from "@/lib/data/site";
 import { images } from "@/lib/images";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
-import { AnimatedCounter } from "@/components/shared/animated-counter";
+
+const trustIcons = [MapPin, ShieldCheck, MapPin, MapPin];
 
 export function HeroSection() {
   return (
     <section className="relative min-h-[100svh] overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src={images.hero.travel}
-          alt="Scenic travel destination with mountains and adventure"
+          src={images.hero.road}
+          alt="Road through the hills of North Bengal"
           fill
           priority
           fetchPriority="high"
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/50 to-navy/90" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(201,169,98,0.15)_0%,_transparent_50%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/75 via-navy/55 to-navy/90" />
       </div>
 
       <div className="relative flex min-h-[100svh] flex-col justify-center pt-24 pb-16">
         <div className="container-wide px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div className="animate-fade-up">
-              <Badge variant="glass" className="mb-6">
-                ✦ Tour & Travel Services · Siliguri
-              </Badge>
-              <h1 className="font-display text-4xl font-medium leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
-                Your Trusted Travel & Transport Partner in{" "}
-                <span className="text-gradient-gold">North Bengal</span>
+              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
+                Tour & Travel · Siliguri
+              </p>
+              <h1 className="font-display text-4xl font-medium leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-[4.25rem]">
+                Tours, Transport & Travel Planning from{" "}
+                <span className="text-gold">Siliguri</span>
               </h1>
-              <p className="mt-6 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
-                C Font Travels provides reliable transport services, customized tour
-                packages, airport transfers, vehicle rentals, and memorable travel
-                experiences across North Bengal, Sikkim, Darjeeling, Bhutan, and beyond.
+              <p className="mt-6 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+                C Font Travels arranges Darjeeling and Sikkim tours, Bagdogra
+                airport transfers, vehicle rentals, and outstation trips across
+                North Bengal — from a local office you can visit or call directly.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <Button asChild variant="accent" size="lg">
-                  <Link href="/packages">
-                    Explore Packages
+                  <Link href="/inquiry">
+                    Plan Your Trip
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </Button>
                 <Button asChild variant="glass" size="lg">
-                  <Link href="/contact">Contact Us</Link>
+                  <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}>
+                    <Phone className="h-4 w-4" />
+                    {siteConfig.phone}
+                  </a>
                 </Button>
               </div>
 
-              <div className="mt-12 grid grid-cols-2 gap-6 sm:grid-cols-4">
-                {heroStats.map((stat) => (
-                  <div key={stat.label} className="text-center sm:text-left">
-                    <div className="font-display text-2xl font-semibold text-white sm:text-3xl">
-                      <AnimatedCounter value={stat.value} suffix={stat.suffix} />
+              <dl className="mt-10 grid gap-4 border-t border-white/15 pt-8 sm:grid-cols-2">
+                {heroTrustSignals.map((signal, index) => {
+                  const Icon = trustIcons[index] ?? MapPin;
+                  return (
+                    <div key={signal.label} className="flex gap-3">
+                      <Icon className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                      <div>
+                        <dt className="text-[11px] font-medium uppercase tracking-wider text-white/50">
+                          {signal.label}
+                        </dt>
+                        <dd className="mt-0.5 text-sm leading-snug text-white/90">
+                          {signal.value}
+                        </dd>
+                      </div>
                     </div>
-                    <div className="mt-1 text-xs text-white/60 sm:text-sm">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
+                  );
+                })}
+              </dl>
             </div>
 
-            <div className="glass animate-fade-up rounded-3xl p-6 [animation-delay:150ms] sm:p-8">
-              <div className="mb-6 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
-                  <Search className="h-5 w-5 text-primary" />
+            <div className="animate-fade-up rounded-2xl border border-white/15 bg-white/95 p-6 shadow-xl [animation-delay:150ms] sm:p-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal">
+                Visit or Call Us
+              </p>
+              <h2 className="mt-3 font-display text-2xl font-medium text-navy">
+                C Font Travels Office
+              </h2>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                {siteConfig.addressLines.join(", ")}
+              </p>
+
+              <div className="mt-6 space-y-4">
+                <div className="flex items-start gap-3 rounded-xl bg-cream/80 p-4">
+                  <Phone className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
+                  <div>
+                    <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                      Phone
+                    </p>
+                    <a
+                      href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
+                      className="mt-1 block text-base font-medium text-navy hover:text-primary"
+                    >
+                      {siteConfig.phone}
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <h2 className="font-display text-xl font-medium text-navy">
-                    Plan Your Journey
-                  </h2>
-                  <p className="text-sm text-muted-foreground">
-                    Tell us where you want to go
-                  </p>
+
+                <div className="flex items-start gap-3 rounded-xl bg-cream/80 p-4">
+                  <Clock className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
+                  <div>
+                    <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                      Office Hours
+                    </p>
+                    <p className="mt-1 text-sm text-navy">{siteConfig.hours}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 rounded-xl bg-cream/80 p-4">
+                  <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
+                  <div>
+                    <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                      Registration
+                    </p>
+                    <p className="mt-1 text-sm text-navy">
+                      {siteConfig.certificateAuthority}
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              <form className="space-y-4" action="/packages">
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="space-y-2">
-                    <label htmlFor="destination" className="text-xs font-medium text-muted-foreground">
-                      Destination
-                    </label>
-                    <div className="relative">
-                      <MapPin className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-                      <Input id="destination" placeholder="Where to?" className="pl-10" />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="travel-date" className="text-xs font-medium text-muted-foreground">
-                      Travel Date
-                    </label>
-                    <div className="relative">
-                      <Calendar className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-                      <Input id="travel-date" type="date" className="pl-10" />
-                    </div>
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="travelers" className="text-xs font-medium text-muted-foreground">
-                    Number of Travelers
-                  </label>
-                  <div className="relative">
-                    <Users className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-                    <Input id="travelers" type="number" placeholder="2" min={1} className="pl-10" />
-                  </div>
-                </div>
-                <Button type="submit" className="w-full" size="lg">
-                  Search Packages
+              <Button asChild className="mt-6 w-full" size="lg">
+                <Link href="/inquiry">
+                  Submit Travel Inquiry
                   <ArrowRight className="h-4 w-4" />
-                </Button>
-              </form>
+                </Link>
+              </Button>
 
               <p className="mt-4 text-center text-xs text-muted-foreground">
-                Or{" "}
-                <Link href="/inquiry" className="font-medium text-primary hover:underline">
-                  submit a custom inquiry
-                </Link>{" "}
-                for personalized planning
+                Prefer email?{" "}
+                <a
+                  href={`mailto:${siteConfig.email}`}
+                  className="font-medium text-primary hover:underline"
+                >
+                  {siteConfig.email}
+                </a>
               </p>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 lg:block">
-        <div className="animate-bounce-soft flex flex-col items-center gap-2">
-          <span className="text-xs uppercase tracking-widest text-white/50">Scroll</span>
-          <div className="h-10 w-6 rounded-full border-2 border-white/30 p-1">
-            <div className="mx-auto h-2 w-1 animate-bounce-soft rounded-full bg-white/60" />
           </div>
         </div>
       </div>

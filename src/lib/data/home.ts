@@ -61,42 +61,37 @@ export const featuredServices = [
 
 export const whyChooseUs = [
   {
-    title: "Local Destination Expertise",
+    title: "Local route knowledge",
     description:
-      "Deep knowledge of North Bengal, Sikkim, Darjeeling, Bhutan, and nearby hill destinations for better planning and smoother travel.",
+      "We plan around real hill roads, seasons, and timings for Darjeeling, Sikkim, Dooars, and cross-border routes — not generic itineraries.",
   },
   {
-    title: "Reliable Transportation",
+    title: "One team for tours and transport",
     description:
-      "Professional drivers, well-maintained vehicles, and dependable service for tours, transfers, and rental requirements.",
+      "Package bookings, airport pick-ups, station transfers, and vehicle rentals are coordinated from our Salugara office — one point of contact.",
   },
   {
-    title: "Custom Travel Planning",
+    title: "A Siliguri office you can reach",
     description:
-      "Flexible packages and itineraries tailored to your budget, schedule, group size, and preferred travel style.",
-  },
-  {
-    title: "Customer-First Service",
-    description:
-      "Friendly support, clear communication, and a strong focus on comfort, safety, and customer satisfaction.",
-  },
-  {
-    title: "Trusted Siliguri Partner",
-    description:
-      "A locally based travel and transport company serving tourists, families, corporates, and groups from Siliguri and across the region.",
+      "Call, email, or visit us during office hours. We serve tourists, families, corporates, and groups travelling out of Siliguri and North Bengal.",
   },
 ];
 
-export const heroStats = [
-  { value: 5000, suffix: "+", label: "Happy Travelers" },
-  { value: 15, suffix: "+", label: "Destinations" },
-  { value: 10, suffix: "+", label: "Years Experience" },
-  { value: 99, suffix: "%", label: "Satisfaction Rate" },
-];
-
-export const travelStats = [
-  { value: 5000, suffix: "+", label: "Happy Travelers" },
-  { value: 15, suffix: "+", label: "Destinations Covered" },
-  { value: 10, suffix: "+", label: "Years of Experience" },
-  { value: 2500, suffix: "+", label: "Successful Trips" },
+export const heroTrustSignals = [
+  {
+    label: "Office",
+    value: "Salugara, Siliguri",
+  },
+  {
+    label: "Registered under",
+    value: "Siliguri Municipal Corporation",
+  },
+  {
+    label: "Airport & railway transfers",
+    value: "Bagdogra Airport · NJP Station",
+  },
+  {
+    label: "Popular routes",
+    value: "Darjeeling · Sikkim · Bhutan · Dooars",
+  },
 ];

@@ -18,9 +18,10 @@ export function BlogPreview({ posts }: BlogPreviewProps) {
     <section className="section-padding bg-cream">
       <div className="container-wide">
         <SectionHeader
+          variant="editorial"
           eyebrow="Travel Blog"
-          title="Insights & Inspiration"
-          description="Travel tips, destination guides, and useful information for planning trips from Siliguri and North Bengal."
+          title="Planning tips from our region"
+          description="Destination notes, route advice, and practical information for trips starting from Siliguri."
         />
 
         <div className="grid gap-8 lg:grid-cols-2">

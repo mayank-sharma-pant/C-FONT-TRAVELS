@@ -2,7 +2,6 @@ import { HeroSection } from "@/components/home/hero-section";
 import { FeaturedServices } from "@/components/home/featured-services";
 import { WhyChooseUs } from "@/components/home/why-choose-us";
 import { TestimonialsSection } from "@/components/home/testimonials-section";
-import { TravelStats } from "@/components/home/travel-stats";
 import { ContactCta } from "@/components/home/contact-cta";
 import { FeaturedDestinations } from "@/components/home/featured-destinations";
 import { PopularPackages } from "@/components/home/popular-packages";
@@ -26,13 +25,12 @@ export default async function HomePage() {
   return (
     <>
       <HeroSection />
-      <FeaturedServices />
       <FeaturedDestinations destinations={destinations} />
-      <WhyChooseUs />
+      <FeaturedServices />
       <PopularPackages packages={packages} />
-      <TestimonialsSection />
-      <TravelStats />
+      <WhyChooseUs />
       <GalleryPreview images={gallery} />
+      <TestimonialsSection />
       <BlogPreview posts={blogs} />
       <ContactCta />
     </>
