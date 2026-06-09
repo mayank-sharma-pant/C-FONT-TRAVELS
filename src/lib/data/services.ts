@@ -34,9 +34,9 @@ export const servicesHero = {
 };
 
 export const servicesIntro = {
-  title: "Your Travel & Transport Partner in North Bengal",
+  title: "Tour and transport from Siliguri",
   description:
-    "Whether you need a family tour to Darjeeling, a corporate vehicle, an airport pickup from Bagdogra, or a fully customized Sikkim itinerary — C Font Travels is here to help.",
+    "We help with family trips to Darjeeling and Sikkim, corporate vehicle hire, Bagdogra airport pickups, and itineraries built around your dates and budget — not off-the-shelf package tours.",
 };
 
 export const services: Service[] = [

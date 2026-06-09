@@ -3,17 +3,14 @@ import { PageHero } from "@/components/shared/page-hero";
 import { CompanyStory } from "@/components/about/company-story";
 import { MissionVision } from "@/components/about/mission-vision";
 import { CoreValues } from "@/components/about/core-values";
-import { WhyWeStarted } from "@/components/about/why-we-started";
-import { Achievements } from "@/components/about/achievements";
-import { Timeline } from "@/components/about/timeline";
-import { TeamSection } from "@/components/about/team-section";
+import { OperationalDetails } from "@/components/about/operational-details";
 import { AboutCta } from "@/components/about/about-cta";
 import { aboutHero } from "@/lib/data/about";
 
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about C Font Travels — a trusted tour and travel company in Siliguri offering transport services, tour packages, and travel planning across North Bengal, Sikkim, Darjeeling, and Bhutan.",
+    "C Font Travels is a new tour and travel business in Siliguri offering transport, rentals, and trip planning across North Bengal and nearby hill routes.",
 };
 
 export default function AboutPage() {
@@ -23,7 +20,7 @@ export default function AboutPage() {
         title={aboutHero.title}
         description={aboutHero.description}
         image={aboutHero.image}
-        imageAlt="C Font Travels team collaborating"
+        imageAlt="Hill landscape near Siliguri"
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "About Us" },
@@ -32,10 +29,7 @@ export default function AboutPage() {
       <CompanyStory />
       <MissionVision />
       <CoreValues />
-      <WhyWeStarted />
-      <Achievements />
-      <Timeline />
-      <TeamSection />
+      <OperationalDetails />
       <AboutCta />
     </>
   );

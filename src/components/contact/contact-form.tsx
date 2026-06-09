@@ -57,7 +57,7 @@ export function ContactForm() {
           <SectionHeader
             eyebrow="Send a Message"
             title="Contact Form"
-            description="Share your travel requirements and our team will get back to you within 24 hours on working days."
+            description="Share your travel requirements. We respond on working days — usually within one business day."
             align="left"
             className="mb-0"
           />

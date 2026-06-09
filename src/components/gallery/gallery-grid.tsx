@@ -6,6 +6,7 @@ import { X } from "lucide-react";
 import type { GalleryImage, GalleryCategory } from "@/lib/data/gallery";
 import {
   galleryCategories,
+  galleryEmptyMessage,
 } from "@/lib/data/gallery";
 import { SectionHeader } from "@/components/shared/section-header";
 import { cn } from "@/lib/utils";
@@ -21,7 +22,20 @@ export function GalleryGrid({ images: galleryImages }: GalleryGridProps) {
   const filtered = useMemo(() => {
     if (activeCategory === "all") return galleryImages;
     return galleryImages.filter((image) => image.category === activeCategory);
-  }, [activeCategory]);
+  }, [activeCategory, galleryImages]);
+
+  if (galleryImages.length === 0) {
+    return (
+      <section className="section-padding bg-navy">
+        <div className="container-wide">
+          <div className="mx-auto max-w-xl rounded-2xl border border-dashed border-white/20 p-12 text-center">
+            <p className="font-display text-xl text-white">No photos yet</p>
+            <p className="mt-3 text-sm text-white/70">{galleryEmptyMessage}</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <>

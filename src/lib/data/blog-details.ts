@@ -6,13 +6,13 @@ export interface BlogDetail {
 
 const defaultDetail: BlogDetail = {
   introduction:
-    "C Font Travels helps travelers across North Bengal plan comfortable, reliable journeys with local expertise and professional transport support from our Siliguri office.",
+    "Practical notes for trips arranged from our Siliguri office — routes, documents, and timing vary by season. Confirm details on inquiry.",
   sections: [
     {
-      heading: "Plan with Local Expertise",
+      heading: "Planning from Siliguri",
       paragraphs: [
-        "Whether you are visiting for the first time or returning to explore more of the region, having a trusted travel partner makes every journey smoother. Our team understands routes, seasonal conditions, and the practical details that matter most to travelers.",
-        "From vehicle arrangements to customized itineraries, we focus on safe travel, clear communication, and customer-first service throughout your trip.",
+        "North Bengal routes change with weather, road work, and permit rules. We quote based on your dates, group size, and vehicle choice — not generic package copy.",
+        "Before travel day, we confirm pickup point, driver contact, and any documents you need (ID, permits where applicable).",
       ],
     },
   ],
@@ -219,7 +219,7 @@ const blogDetails: Record<string, BlogDetail> = {
       "Share train details when booking station transfers.",
       "Confirm vehicle type for hill routes and luggage.",
       "Keep phone charged for driver coordination on arrival.",
-      "Book return drop in advance for a seamless trip.",
+      "Book return drop in advance so pickup timing is confirmed before your travel day.",
     ],
   },
 };

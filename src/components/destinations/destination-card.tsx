@@ -135,6 +135,28 @@ export function DestinationCard({
         <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
           {destination.description}
         </p>
+        {destination.bestSeason && (
+          <dl className="mt-4 space-y-2 border-t border-border/50 pt-4 text-xs">
+            <div>
+              <dt className="font-medium text-navy">Best season</dt>
+              <dd className="mt-0.5 text-muted-foreground">{destination.bestSeason}</dd>
+            </div>
+            {destination.transportation && (
+              <div>
+                <dt className="font-medium text-navy">Transport from Siliguri</dt>
+                <dd className="mt-0.5 text-muted-foreground">
+                  {destination.transportation}
+                </dd>
+              </div>
+            )}
+            {destination.travelStyle && (
+              <div>
+                <dt className="font-medium text-navy">Travel style</dt>
+                <dd className="mt-0.5 text-muted-foreground">{destination.travelStyle}</dd>
+              </div>
+            )}
+          </dl>
+        )}
         <div className="mt-3 flex items-center gap-1 text-xs text-muted-foreground">
           <Clock className="h-3.5 w-3.5" />
           {destination.duration}

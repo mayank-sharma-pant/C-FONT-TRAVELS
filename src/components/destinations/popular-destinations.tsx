@@ -13,9 +13,9 @@ export function PopularDestinations({ destinations }: PopularDestinationsProps) 
     <section className="section-padding bg-white">
       <div className="container-wide">
         <SectionHeader
-          eyebrow="Popular"
-          title="Most Loved Destinations"
-          description="Traveler favorites that consistently deliver unforgettable experiences — curated by our expert team."
+          eyebrow="Regional routes"
+          title="Trips we commonly arrange from Siliguri"
+          description="Starting prices and durations are guides — route, vehicle, and final cost are confirmed when you inquire."
         />
 
         <div className="grid gap-6 md:grid-cols-2">

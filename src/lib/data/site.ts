@@ -2,11 +2,12 @@ export const siteConfig = {
   name: "C Font Travels",
   tagline: "Tour & Travel · Siliguri",
   description:
-    "C Font Travels is a trusted tour and travel company in Siliguri offering reliable transport services, vehicle rentals, airport and railway transfers, customized tour packages, and travel planning across North Bengal, Sikkim, Darjeeling, Bhutan, and beyond.",
+    "C Font Travels is a tour and travel business in Siliguri arranging transport, vehicle rentals, airport and railway transfers, and trip planning across North Bengal, Sikkim, Darjeeling, and nearby routes.",
   url: "https://cfonttravels.com",
   phone: "+91 97757 19041",
   email: "train.cfonttravels@gmail.com",
-  whatsapp: "To Be Updated",
+  /** Same number as phone — used for WhatsApp links */
+  whatsapp: "+91 97757 19041",
   gst: "To Be Updated",
   address:
     "H/O Salugara Bazar, Near Dolha Hotel, P.O. Salugara, P.S. Bhaktinagar, Siliguri, West Bengal, India - 734008",
@@ -42,8 +43,6 @@ export const navLinks = [
 export const footerLinks = {
   company: [
     { label: "About Us", href: "/about" },
-    { label: "Our Team", href: "/about#team" },
-    { label: "Testimonials", href: "/testimonials" },
     { label: "FAQ", href: "/faq" },
     { label: "Travel Inquiry", href: "/inquiry" },
   ],

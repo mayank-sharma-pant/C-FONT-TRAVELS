@@ -8,7 +8,7 @@ import { getStoredGalleryImages } from "@/lib/store/content";
 export const metadata: Metadata = {
   title: "Gallery",
   description:
-    "Browse travel photos from C Font Travels — hill tours, group trips, transport services, and destination experiences across North Bengal, Sikkim, and beyond.",
+    "Trip and vehicle photos will be added here when available. For now, send an inquiry or call our Siliguri office.",
 };
 
 export default async function GalleryPage() {

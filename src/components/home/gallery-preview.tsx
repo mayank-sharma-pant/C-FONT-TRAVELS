@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ImageIcon } from "lucide-react";
 import type { GalleryImage } from "@/lib/data/gallery";
 import { SectionHeader } from "@/components/shared/section-header";
 import { Button } from "@/components/ui/button";
@@ -10,6 +10,10 @@ interface GalleryPreviewProps {
 }
 
 export function GalleryPreview({ images }: GalleryPreviewProps) {
+  if (images.length === 0) {
+    return null;
+  }
+
   const previewImages = images.slice(0, 6);
 
   return (
@@ -18,8 +22,8 @@ export function GalleryPreview({ images }: GalleryPreviewProps) {
         <SectionHeader
           variant="split"
           eyebrow="Gallery"
-          title="Journeys across the region"
-          description="Hill views, group trips, and road travel moments from tours and transfers we arrange around North Bengal."
+          title="Trip photos"
+          description="Photos from trips and transfers we arrange."
           light
         />
 
@@ -42,10 +46,6 @@ export function GalleryPreview({ images }: GalleryPreviewProps) {
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                   sizes="(max-width: 768px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-navy/0 transition-colors duration-500 group-hover:bg-navy/40" />
-                <div className="absolute inset-0 flex items-end p-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <p className="text-sm font-medium text-white">{image.alt}</p>
-                </div>
               </div>
             </div>
           ))}
@@ -54,9 +54,29 @@ export function GalleryPreview({ images }: GalleryPreviewProps) {
         <div className="mt-12 text-center">
           <Button asChild variant="accent" size="lg">
             <Link href="/gallery">
-              View Full Gallery
+              View gallery
               <ArrowRight className="h-4 w-4" />
             </Link>
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function GalleryEmptyNotice() {
+  return (
+    <section className="section-padding bg-sand/40">
+      <div className="container-wide">
+        <div className="mx-auto max-w-xl rounded-2xl border border-dashed border-border bg-white p-10 text-center">
+          <ImageIcon className="mx-auto h-8 w-8 text-muted-foreground/50" />
+          <p className="mt-4 font-display text-lg text-navy">Gallery coming soon</p>
+          <p className="mt-2 text-sm text-muted-foreground">
+            We have not uploaded trip photos yet. Call or send an inquiry to discuss
+            routes and transport in the meantime.
+          </p>
+          <Button asChild variant="default" size="lg" className="mt-6">
+            <Link href="/inquiry">Send inquiry</Link>
           </Button>
         </div>
       </div>

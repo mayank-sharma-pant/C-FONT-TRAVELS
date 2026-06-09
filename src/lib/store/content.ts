@@ -5,7 +5,7 @@ import { blogDetailsSeed, getBlogDetail } from "@/lib/data/blog-details";
 import type { GalleryImage } from "@/lib/data/gallery";
 import { galleryImages as defaultGalleryImages } from "@/lib/data/gallery";
 import type { Destination } from "@/lib/data/destinations";
-import { allDestinations as defaultDestinations } from "@/lib/data/destinations";
+import { allDestinations as defaultDestinations, enrichDestination } from "@/lib/data/destinations";
 import type { TourPackage } from "@/lib/data/packages";
 import { tourPackages as defaultPackages } from "@/lib/data/packages";
 import type { PackageDetail } from "@/lib/data/package-details";
@@ -40,7 +40,11 @@ export async function saveStoredGalleryImages(images: GalleryImage[]) {
 }
 
 export async function getStoredDestinations() {
-  return readStore<Destination[]>(storeFiles.destinations, () => defaultDestinations);
+  const destinations = await readStore<Destination[]>(
+    storeFiles.destinations,
+    () => defaultDestinations
+  );
+  return destinations.map(enrichDestination);
 }
 
 export async function saveStoredDestinations(destinations: Destination[]) {

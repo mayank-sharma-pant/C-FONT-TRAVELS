@@ -4,6 +4,7 @@ import { ServicesNav } from "@/components/services/services-nav";
 import { ServiceShowcase } from "@/components/services/service-showcase";
 import { ServicesProcess } from "@/components/services/services-process";
 import { ServicesCta } from "@/components/services/services-cta";
+import { OperationalDetails } from "@/components/about/operational-details";
 import { servicesHero, servicesIntro } from "@/lib/data/services";
 import { SectionHeader } from "@/components/shared/section-header";
 
@@ -39,6 +40,7 @@ export default function ServicesPage() {
       </section>
       <ServiceShowcase />
       <ServicesProcess />
+      <OperationalDetails compact />
       <ServicesCta />
     </>
   );

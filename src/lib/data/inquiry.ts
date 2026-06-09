@@ -51,9 +51,9 @@ export const inquiryProcess = [
   },
   {
     step: "03",
-    title: "Confirm & Book",
+    title: "Confirm with our office",
     description:
-      "Review the plan, ask questions, and confirm your booking once you are satisfied with the arrangements.",
+      "Review the plan, ask questions, and confirm pick-up details directly with us. No online payment on this website.",
   },
   {
     step: "04",

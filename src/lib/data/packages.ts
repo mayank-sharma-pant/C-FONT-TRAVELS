@@ -186,7 +186,7 @@ export const tourPackages: TourPackage[] = [
     category: "luxury",
     highlights: ["City Tour", "Desert Safari", "Shopping", "Modern Landmarks"],
     description:
-      "An international Dubai holiday package with city experiences, leisure time, and premium travel planning support.",
+      "Five-day Dubai itinerary outline — flights, hotels, and inclusions confirmed when you inquire. International trips need valid passport and visa as per UAE rules.",
   },
 ];
 

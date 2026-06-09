@@ -2,17 +2,15 @@
 
 import { motion } from "framer-motion";
 import {
-  Award,
   Compass,
   Heart,
   Shield,
-  Sparkles,
   Users,
 } from "lucide-react";
 import { coreValues } from "@/lib/data/about";
 import { SectionHeader } from "@/components/shared/section-header";
 
-const icons = [Shield, Award, Compass, Sparkles, Heart, Users];
+const icons = [Shield, Compass, Heart, Users];
 
 export function CoreValues() {
   return (
@@ -22,8 +20,8 @@ export function CoreValues() {
       <div className="container-wide relative">
         <SectionHeader
           eyebrow="Core Values"
-          title="What Drives Everything We Do"
-          description="Our values aren't just words on a wall — they guide every recommendation, every itinerary, and every interaction with our travelers."
+          title="What guides how we work"
+          description="Principles for a new local travel office — not marketing slogans."
           light
         />
 

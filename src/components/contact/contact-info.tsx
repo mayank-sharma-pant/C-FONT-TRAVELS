@@ -27,8 +27,8 @@ export function ContactInfo() {
           <div>
             <SectionHeader
               eyebrow="Get in Touch"
-              title="We Are Here to Help You Travel Better"
-              description="Visit our Siliguri office, call us, or send a message. Our team is ready to assist with tours, transport, rentals, and travel planning."
+              title="Contact our Siliguri office"
+              description="Call, WhatsApp, email, or visit us. This site is for travel inquiries — we reply during office hours."
               align="left"
               className="mb-8"
             />
@@ -116,7 +116,9 @@ export function ContactInfo() {
                       {siteConfig.certificateAuthority}
                     </p>
                     <p className="mt-1 text-xs text-muted-foreground">
-                      GST: {siteConfig.gst}
+                      {siteConfig.gst !== "To Be Updated" && (
+                        <>GST: {siteConfig.gst}</>
+                      )}
                     </p>
                   </div>
                 </CardContent>
@@ -130,21 +132,15 @@ export function ContactInfo() {
                   Submit Travel Inquiry
                 </Link>
               </Button>
-              {siteConfig.whatsapp === "To Be Updated" ? (
-                <Button variant="outline" size="lg" disabled>
-                  WhatsApp: To Be Updated
-                </Button>
-              ) : (
-                <Button asChild variant="outline" size="lg">
-                  <a
-                    href={`https://wa.me/${siteConfig.whatsapp.replace(/\D/g, "")}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Chat on WhatsApp
-                  </a>
-                </Button>
-              )}
+              <Button asChild variant="outline" size="lg">
+                <a
+                  href={`https://wa.me/${siteConfig.whatsapp.replace(/\D/g, "")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp {siteConfig.whatsapp}
+                </a>
+              </Button>
             </div>
           </div>
 

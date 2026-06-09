@@ -1,8 +1,6 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { companyStory } from "@/lib/data/about";
+import { STOCK_IMAGE_NOTE } from "@/lib/data/constants";
 import { SectionHeader } from "@/components/shared/section-header";
 
 export function CompanyStory() {
@@ -17,13 +15,7 @@ export function CompanyStory() {
         />
 
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <motion.div
-            initial={{ opacity: 0, x: -24 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.6 }}
-            className="space-y-5"
-          >
+          <div className="space-y-5">
             {companyStory.paragraphs.map((paragraph) => (
               <p
                 key={paragraph.slice(0, 40)}
@@ -39,36 +31,27 @@ export function CompanyStory() {
                   key={stat.label}
                   className="rounded-2xl border border-border/60 bg-white p-4 text-center shadow-sm"
                 >
-                  <p className="font-display text-2xl font-semibold text-primary">
+                  <p className="font-display text-xl font-semibold text-primary sm:text-2xl">
                     {stat.value}
                   </p>
                   <p className="mt-1 text-xs text-muted-foreground">{stat.label}</p>
                 </div>
               ))}
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 24 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="relative"
-          >
-            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-2xl">
+          <div className="relative">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border/60">
               <Image
                 src={companyStory.image}
-                alt="Travelers exploring a scenic destination"
+                alt="Scenic road in North Bengal — stock placeholder"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 hidden rounded-2xl glass p-5 sm:block">
-              <p className="font-display text-3xl font-semibold text-navy">12+</p>
-              <p className="text-sm text-muted-foreground">Years of Excellence</p>
-            </div>
-          </motion.div>
+            <p className="mt-3 text-xs text-muted-foreground">{STOCK_IMAGE_NOTE}</p>
+          </div>
         </div>
       </div>
     </section>
