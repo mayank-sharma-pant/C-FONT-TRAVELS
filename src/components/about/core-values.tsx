@@ -18,7 +18,6 @@ export function CoreValues() {
   return (
     <section className="relative overflow-hidden section-padding">
       <div className="absolute inset-0 bg-navy" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_rgba(201,169,98,0.1)_0%,_transparent_60%)]" />
 
       <div className="container-wide relative">
         <SectionHeader

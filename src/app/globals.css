@@ -77,6 +77,8 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    font-size: 16px;
+    line-height: 1.6;
   }
 
   h1,
@@ -86,28 +88,41 @@
   h5,
   h6 {
     font-family: var(--font-display), Georgia, serif;
+    line-height: 1.15;
+  }
+
+  p {
+    line-height: 1.65;
   }
 }
 
 @layer utilities {
   .glass {
-    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl;
+    @apply border border-white/20 bg-white/80 shadow-md backdrop-blur-md;
   }
 
   .glass-dark {
-    @apply bg-navy/80 backdrop-blur-xl border border-white/10 shadow-xl;
+    @apply border border-white/10 bg-navy/85 shadow-md backdrop-blur-md;
   }
 
-  .text-gradient-gold {
-    @apply bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent;
+  .hero-overlay {
+    @apply bg-gradient-to-t from-navy via-navy/55 to-navy/25;
+  }
+
+  .photo-overlay {
+    @apply bg-gradient-to-t from-navy/85 via-navy/25 to-transparent;
   }
 
   .section-padding {
-    @apply px-4 py-20 sm:px-6 lg:px-8 lg:py-28;
+    @apply px-4 py-16 sm:px-6 lg:px-8 lg:py-24;
   }
 
   .container-wide {
     @apply mx-auto max-w-7xl;
+  }
+
+  .section-cta-panel {
+    @apply rounded-2xl border border-navy/10 bg-navy p-8 sm:p-10 lg:p-12;
   }
 
   .scrollbar-hide {
@@ -122,7 +137,7 @@
   @keyframes fade-up {
     from {
       opacity: 0;
-      transform: translateY(16px);
+      transform: translateY(12px);
     }
     to {
       opacity: 1;
@@ -131,21 +146,7 @@
   }
 
   .animate-fade-up {
-    animation: fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
-  }
-
-  @keyframes bounce-soft {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(8px);
-    }
-  }
-
-  .animate-bounce-soft {
-    animation: bounce-soft 2s ease-in-out infinite;
+    animation: fade-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
 
   @keyframes slide-in-right {

@@ -4,7 +4,7 @@ export const aboutHero = {
   title: "About C Font Travels",
   description:
     "A trusted tour and travel company based in Siliguri, dedicated to providing reliable transportation, customized travel packages, and memorable journeys across North Bengal and beyond.",
-  image: images.hero.team,
+  image: images.hero.scenic,
 };
 
 export const companyStory = {

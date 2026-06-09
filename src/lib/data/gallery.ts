@@ -60,8 +60,8 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 5,
-    src: images.destinations.kashmir,
-    alt: "Scenic hill destination travel experience",
+    src: images.region.forest,
+    alt: "Dooars forest and wildlife travel routes",
     category: "adventure",
   },
   {
@@ -97,31 +97,31 @@ export const galleryImages: GalleryImage[] = [
   {
     id: 11,
     src: images.gallery.city,
-    alt: "City travel and local transfer services",
+    alt: "Siliguri transfer and local travel coordination",
     category: "cities",
   },
   {
     id: 12,
-    src: images.destinations.dubai,
-    alt: "International city travel destination",
+    src: images.region.highway,
+    alt: "Outstation highway travel from North Bengal",
     category: "cities",
   },
   {
     id: 13,
-    src: images.gallery.beach,
-    alt: "Leisure holiday travel destination",
+    src: images.region.lake,
+    alt: "Scenic lake and hill leisure travel",
     category: "beaches",
   },
   {
     id: 14,
-    src: images.gallery.maldives,
-    alt: "Relaxing beach and leisure travel experience",
+    src: images.gallery.scenic,
+    alt: "Panoramic hill views on a regional tour",
     category: "beaches",
   },
   {
     id: 15,
-    src: images.packages.kerala,
-    alt: "Customized tour package travel experience",
+    src: images.region.hills,
+    alt: "Hill station tour package scenery",
     category: "mountains",
   },
   {

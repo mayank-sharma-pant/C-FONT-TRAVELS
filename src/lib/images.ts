@@ -4,12 +4,21 @@ const u = (id: string, width = 640) =>
 
 export const images = {
   hero: {
-    travel: u("1488646953014-85cb44e25828", 1920),
-    team: u("1522202176988-66273c2fd55f", 1920),
-    scenic: u("1476514525535-07fb3b4ae5f1", 1920),
     road: u("1469854523086-cc02fe5d8800", 1920),
-    flight: u("1436491865332-7a61a109cc05", 1920),
+    scenic: u("1476514525535-07fb3b4ae5f1", 1920),
+    mountains: u("1506905925346-21bda4d32df4", 1920),
+    travel: u("1488646953014-85cb44e25828", 1920),
     packages: u("1476514525535-07fb3b4ae5f1", 1920),
+    team: u("1529156069898-49953e39b3ac", 1920),
+    flight: u("1436491865332-7a61a109cc05", 1920),
+  },
+  region: {
+    hills: u("1506905925346-21bda4d32df4"),
+    lake: u("1476514525535-07fb3b4ae5f1"),
+    forest: u("1464822759023-fed622ff2c3b"),
+    highway: u("1477587458883-47145ed94245"),
+    road: u("1469854523086-cc02fe5d8800"),
+    group: u("1529156069898-49953e39b3ac"),
   },
   destinations: {
     dubai: u("1512453979798-5ea266f8880c"),
@@ -22,15 +31,15 @@ export const images = {
     goa: u("1507525428034-b723cf961d3e"),
   },
   services: {
-    tour: u("1488646953014-85cb44e25828"),
+    tour: u("1476514525535-07fb3b4ae5f1"),
+    domestic: u("1477587458883-47145ed94245"),
     flight: u("1436491865332-7a61a109cc05"),
-    hotel: u("1566073771259-6a8506099945"),
-    visa: u("1450101499163-c8848c66ca85"),
+    hotel: u("1436491865332-7a61a109cc05"),
+    visa: u("1477587458883-47145ed94245"),
     corporate: u("1497366216548-37526070297c"),
     group: u("1529156069898-49953e39b3ac"),
     honeymoon: u("1573843981267-be1999ff37cd"),
-    custom: u("1476514525535-07fb3b4ae5f1"),
-    domestic: u("1477587458883-47145ed94245"),
+    custom: u("1469854523086-cc02fe5d8800"),
     international: u("1488646953014-85cb44e25828"),
   },
   packages: {
@@ -45,14 +54,17 @@ export const images = {
     goa: u("1507525428034-b723cf961d3e"),
   },
   gallery: {
-    beach: u("1507525428034-b723cf961d3e", 800),
-    mountains: u("1464822759023-fed622ff2c3b", 800),
-    city: u("1512453979798-5ea266f8880c", 800),
-    travel: u("1488646953014-85cb44e25828", 800),
+    mountains: u("1506905925346-21bda4d32df4", 800),
+    adventure: u("1464822759023-fed622ff2c3b", 800),
+    travel: u("1469854523086-cc02fe5d8800", 800),
     group: u("1529156069898-49953e39b3ac", 800),
-    adventure: u("1506905925346-21bda4d32df4", 800),
+    highway: u("1477587458883-47145ed94245", 800),
+    scenic: u("1476514525535-07fb3b4ae5f1", 800),
+    airport: u("1436491865332-7a61a109cc05", 800),
+    city: u("1497366216548-37526070297c", 800),
+    beach: u("1507525428034-b723cf961d3e", 800),
     maldives: u("1514282401047-d79a71a590e8", 800),
-    alps: u("1506905925346-21bda4d32df4", 800),
+    alps: u("1464822759023-fed622ff2c3b", 800),
   },
   blog: {
     bali: u("1514282401047-d79a71a590e8"),
@@ -68,7 +80,7 @@ export const images = {
     man3: u("1560250097-0b93528c311a", 200),
   },
   about: {
-    story: u("1488646953014-85cb44e25828"),
+    story: u("1469854523086-cc02fe5d8800"),
     founder: u("1476514525535-07fb3b4ae5f1"),
   },
   packageGallery: {
@@ -78,7 +90,7 @@ export const images = {
     bali1: u("1514282401047-d79a71a590e8", 800),
     bali2: u("1573843981267-be1999ff37cd", 800),
     bali3: u("1507525428034-b723cf961d3e", 800),
-    default1: u("1488646953014-85cb44e25828", 800),
+    default1: u("1476514525535-07fb3b4ae5f1", 800),
     default2: u("1469854523086-cc02fe5d8800", 800),
   },
 } as const;

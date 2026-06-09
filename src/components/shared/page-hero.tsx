@@ -36,8 +36,7 @@ export function PageHero({
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/60 to-navy/40" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(201,169,98,0.12)_0%,_transparent_55%)]" />
+        <div className="absolute inset-0 hero-overlay" />
       </div>
 
       <div className="container-wide relative w-full px-4 pb-12 sm:px-6 sm:pb-16 lg:px-8 lg:pb-20">

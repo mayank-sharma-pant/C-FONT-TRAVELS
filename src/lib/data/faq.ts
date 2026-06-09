@@ -18,7 +18,7 @@ export const faqHero = {
   title: "Frequently Asked Questions",
   description:
     "Find answers about our tour packages, transport services, bookings, and travel planning support from C Font Travels in Siliguri.",
-  image: images.hero.team,
+  image: images.hero.scenic,
 };
 
 export const faqCategories: { id: FaqCategory; label: string }[] = [

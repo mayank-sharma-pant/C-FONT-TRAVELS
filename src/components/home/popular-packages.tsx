@@ -29,7 +29,7 @@ export function PopularPackages({ packages }: PopularPackagesProps) {
           {featuredPackages.map((pkg) => (
             <Card
               key={pkg.slug}
-              className="group overflow-hidden border-0 bg-white shadow-md transition-all duration-500 hover:-translate-y-1 hover:shadow-xl"
+              className="group overflow-hidden border border-border/60 bg-white shadow-sm transition-shadow hover:shadow-md"
             >
               <div className="grid sm:grid-cols-5">
                 <div className="relative aspect-[4/3] sm:col-span-2 sm:aspect-auto sm:min-h-[240px]">

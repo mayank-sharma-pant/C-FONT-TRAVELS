@@ -31,7 +31,7 @@ export const featuredServices = [
     description:
       "Well-maintained cars, SUVs, and tempo travellers for family trips, corporate travel, tours, and daily rental requirements.",
     href: "/services#vehicle-rentals",
-    image: images.services.flight,
+    image: images.region.highway,
   },
   {
     icon: Plane,
@@ -39,7 +39,7 @@ export const featuredServices = [
     description:
       "Punctual pick-up and drop services from Bagdogra Airport and nearby locations with comfortable vehicles and professional coordination.",
     href: "/services#airport-transfers",
-    image: images.services.hotel,
+    image: images.services.flight,
   },
   {
     icon: TrainFront,
@@ -47,7 +47,7 @@ export const featuredServices = [
     description:
       "Hassle-free railway station transfers from New Jalpaiguri, Siliguri Junction, and other nearby stations for individuals and groups.",
     href: "/services#railway-station-transfers",
-    image: images.services.visa,
+    image: images.services.domestic,
   },
   {
     icon: Building2,
